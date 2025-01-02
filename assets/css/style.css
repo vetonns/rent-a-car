@@ -1679,11 +1679,8 @@ a:hover {
 .card-box-ico {
   padding: 1rem 3rem 1rem 2.5rem;
   /* border: 5px solid #2eca6a; */
-
-  
-  
 }
-.card-box-ico a{
+.card-box-ico a {
   padding-left: 30px;
 }
 
@@ -2176,9 +2173,23 @@ footer .credits {
   margin-top: 40px;
 }
 
-.smb{
+.smb {
   background-color: #18d26e;
 }
-#map{
+#map {
   height: 500px;
+}
+
+.swipe-car {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.btn-veturat {
+  background-color: #18d26e;
+  padding: 0.5%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
 }
