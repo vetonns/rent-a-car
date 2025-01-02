@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-  color: #ca3e2e;
+  color: #26a356;
   text-decoration: none;
 }
 
@@ -2181,6 +2181,7 @@ footer .credits {
 }
 
 .swipe-car {
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -2192,4 +2193,16 @@ footer .credits {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+/* .btn-veturat :hover {
+  
+  
+} */
+
+.custom-arrow{
+  color: #2eca6a;
+  height: 50px;
 }
