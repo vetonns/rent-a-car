@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-  color: #2eca6a;
+  color: #ca3e2e;
   text-decoration: none;
 }
 
@@ -1678,7 +1678,13 @@ a:hover {
 
 .card-box-ico {
   padding: 1rem 3rem 1rem 2.5rem;
-  border: 5px solid #2eca6a;
+  /* border: 5px solid #2eca6a; */
+
+  
+  
+}
+.card-box-ico a{
+  padding-left: 30px;
 }
 
 .card-box-ico span {
@@ -2162,4 +2168,17 @@ footer .copyright-footer {
 
 footer .credits {
   font-size: 14px;
+}
+
+/* NEW STYLE */
+
+.filtrimi {
+  margin-top: 40px;
+}
+
+.smb{
+  background-color: #18d26e;
+}
+#map{
+  height: 500px;
 }
