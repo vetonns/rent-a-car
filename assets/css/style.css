@@ -1405,13 +1405,31 @@ a:hover {
 /*------/ Property Grid /-----*/
 .property-grid .grid-option {
   text-align: right;
+  margin-top: 2rem;
+}
+.grid-option{
+  border: 3px solid #18d26e;
+  width: 15%;
   margin-bottom: 2rem;
+  float:right;
+  border-color:#18d26e;
+
+}
+.custom-select {
+  
+  border-color:#18d26e;
+}
+
+.custom-select option{
+  color: #2b2a2a;
+  border-radius: 1px;
 }
 
 .property-grid .grid-option .custom-select {
   border-radius: 0;
   width: 200px;
-  border-color: #313131;
+  
+  
 }
 
 .property-grid .grid-option .custom-select:hover,
@@ -2177,7 +2195,7 @@ footer .credits {
   background-color: #18d26e;
 }
 #map {
-  height: 500px;
+  height: 600px;
 }
 
 .swipe-car {
@@ -2189,12 +2207,13 @@ footer .credits {
 
 .btn-veturat {
   background-color: #18d26e;
-  padding: 0.5%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0.9%;
+  padding-left: 30px;
+  padding-right: 30px;
   border-radius: 10px;
   color: white;
   font-size: 16px;
+  text-align: center;
 }
 
 /* .btn-veturat :hover {
@@ -2204,5 +2223,196 @@ footer .credits {
 
 .custom-arrow{
   color: #2eca6a;
-  height: 50px;
+  
+}
+
+
+
+
+/* kartat e kerrev */
+
+/* Stili për Seksionin */
+.car-listing {
+  margin-top: 0px;
+  text-align: center;
+  
+}
+
+/* Stili për Kartat */
+.car-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+  
+}
+
+.car-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.car-card-img img {
+ 
+  width: 100%;
+  max-height: 50%;
+  height: auto;
+  border-bottom: 4px solid #26a356;
+  border-radius: 4px;
+  
+}
+
+.car-card-body   {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: flex-start;
+  padding: 40px;
+  text-align: left;
+}
+
+.car-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.car-price {
+  font-size: 16px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.car-details li {
+  font-size: 16px;
+  color: #555;
+}
+
+.total-cost {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn-book {
+  background-color: #18d26e;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 0px 0px 0px 0px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-book:hover {
+  background-color: #26a356;
+}
+.cart-sec{
+  margin-top: 300px;
+}
+
+
+
+
+/* provo */
+
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.card {
+  width: 30%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 15px 0;
+}
+
+.reserve-btn {
+  
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.reserve-btn:hover {
+  
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 300px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+ 
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 14px;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
 }

@@ -92,360 +92,714 @@
 
 
 
-<!-- ======= Intro Single ======= -->
-<section class="intro-single">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-lg-8">
-        <div class="title-single-box">
-          <h1 class="title-single text-uppercase"> veturat tona</h1>
-          <span class="color-text-a">Grid Properties</span>
-        </div>
-      </div>
-      <div class="col-md-12 col-lg-4">
-        <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Home</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Properties Grid
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-  </div>
-</section><!-- End Intro Single-->
 
-<!-- ======= Property Grid ======= -->
-<section class="property-grid grid">
-  <div class="container">
+<section class="car-listing col-lg-12 mt-5">
+  <div class="container cart-sec ">
     <div class="row">
-      <div class="col-sm-12">
-        <div class="grid-option">
+      <!-- Fillimi i Kartës -->
+      <div class="mt-5">
+        <div class="grid-option ">
           <form>
             <select class="custom-select">
-              <option selected>Te gjitha </option>
-              <option value="1">Nga qmimi me i lart</option>
-              <option value="2">Nga qmimi me i vogel</option>
-              
+              <option selected>Te Gjitha</option>
+              <option value="1">Nga qmimi me i uret tek i larti</option>
+              <option value="2">Nga qmimi me lart te i ulet</option>
+              <option value="3">Te rezervuara</option>
             </select>
           </form>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card-box-a card-shadow">
-          <div class="img-box-a">
-            <img src="assets/img/th.jpg" alt="" class="img-a img-fluid">
-          </div>
-          <div class="card-overlay">
-            <div class="card-overlay-a-content">
-              <div class="card-header-a">
-                <h2 class="card-title-a">
-                  <a href="#">204 Mount
-                    <br /> Olive Road Two</a>
-                </h2>
-              </div>
-              <div class="card-body-a">
-                <div class="price-box d-flex">
-                  <span class="price-a">rent | $ 12.000</span>
-                </div>
-                <a href="property-single.html" class="link-a">Click here to view
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-              <div class="card-footer-a">
-                <ul class="card-info d-flex justify-content-around">
-                  <li>
-                    <h4 class="card-info-title">Area</h4>
-                    <span>340m
-                      <sup>2</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Beds</h4>
-                    <span>2</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Baths</h4>
-                    <span>4</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Garages</h4>
-                    <span>1</span>
-                  </li>
-                </ul>
+
+      <div class="title-single-box d-flex justify-content-between mb-5">
+        <h1 class="title-single">Te Gjitha <strong class="color-b">Veturat  </strong> </h1>
+        <span class="color-text-a">Filtro Opsionet</span>
+      </div>
+      <!-- Fundi i Kartës -->
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/audi1.jpg" height="" alt="BMW X4" class="img-fluid">
               </div>
             </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card-box-a card-shadow">
-          <div class="img-box-a">
-            <img src="assets/img/property-3.jpg" alt="" class="img-a img-fluid">
-          </div>
-          <div class="card-overlay">
-            <div class="card-overlay-a-content">
-              <div class="card-header-a">
-                <h2 class="card-title-a">
-                  <a href="#">204 Mount
-                    <br /> Olive Road Two</a>
-                </h2>
-              </div>
-              <div class="card-body-a">
-                <div class="price-box d-flex">
-                  <span class="price-a">rent | $ 12.000</span>
-                </div>
-                <a href="property-single.html" class="link-a">Click here to view
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-              <div class="card-footer-a">
-                <ul class="card-info d-flex justify-content-around">
-                  <li>
-                    <h4 class="card-info-title">Area</h4>
-                    <span>340m
-                      <sup>2</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Beds</h4>
-                    <span>2</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Baths</h4>
-                    <span>4</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Garages</h4>
-                    <span>1</span>
-                  </li>
-                </ul>
+      <!-- Fundi i Kartës tjetër -->
+
+
+      <!-- 2 Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/images.jpg" height="" alt="BMW X4" class="img-fluid">
               </div>
             </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card-box-a card-shadow">
-          <div class="img-box-a">
-            <img src="assets/img/property-6.jpg" alt="" class="img-a img-fluid">
-          </div>
-          <div class="card-overlay">
-            <div class="card-overlay-a-content">
-              <div class="card-header-a">
-                <h2 class="card-title-a">
-                  <a href="#">204 Mount
-                    <br /> Olive Road Two</a>
-                </h2>
-              </div>
-              <div class="card-body-a">
-                <div class="price-box d-flex">
-                  <span class="price-a">rent | $ 12.000</span>
-                </div>
-                <a href="property-single.html" class="link-a">Click here to view
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-              <div class="card-footer-a">
-                <ul class="card-info d-flex justify-content-around">
-                  <li>
-                    <h4 class="card-info-title">Area</h4>
-                    <span>340m
-                      <sup>2</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Beds</h4>
-                    <span>2</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Baths</h4>
-                    <span>4</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Garages</h4>
-                    <span>1</span>
-                  </li>
-                </ul>
+      <!-- Fundi i Kartës tjetër -->
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/audi1.jpg" height="" alt="BMW X4" class="img-fluid">
               </div>
             </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card-box-a card-shadow">
-          <div class="img-box-a">
-            <img src="assets/img/property-7.jpg" alt="" class="img-a img-fluid">
-          </div>
-          <div class="card-overlay">
-            <div class="card-overlay-a-content">
-              <div class="card-header-a">
-                <h2 class="card-title-a">
-                  <a href="#">204 Mount
-                    <br /> Olive Road Two</a>
-                </h2>
-              </div>
-              <div class="card-body-a">
-                <div class="price-box d-flex">
-                  <span class="price-a">rent | $ 12.000</span>
-                </div>
-                <a href="property-single.html" class="link-a">Click here to view
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-              <div class="card-footer-a">
-                <ul class="card-info d-flex justify-content-around">
-                  <li>
-                    <h4 class="card-info-title">Area</h4>
-                    <span>340m
-                      <sup>2</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Beds</h4>
-                    <span>2</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Baths</h4>
-                    <span>4</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Garages</h4>
-                    <span>1</span>
-                  </li>
-                </ul>
+      <!-- Fundi i Kartës tjetër -->
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="audi1.jpg" height="" alt="BMW X4" class="img-fluid">
               </div>
             </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card-box-a card-shadow">
-          <div class="img-box-a">
-            <img src="assets/img/property-8.jpg" alt="" class="img-a img-fluid">
-          </div>
-          <div class="card-overlay">
-            <div class="card-overlay-a-content">
-              <div class="card-header-a">
-                <h2 class="card-title-a">
-                  <a href="#">204 Mount
-                    <br /> Olive Road Two</a>
-                </h2>
-              </div>
-              <div class="card-body-a">
-                <div class="price-box d-flex">
-                  <span class="price-a">rent | $ 12.000</span>
-                </div>
-                <a href="property-single.html" class="link-a">Click here to view
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-              <div class="card-footer-a">
-                <ul class="card-info d-flex justify-content-around">
-                  <li>
-                    <h4 class="card-info-title">Area</h4>
-                    <span>340m
-                      <sup>2</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Beds</h4>
-                    <span>2</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Baths</h4>
-                    <span>4</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Garages</h4>
-                    <span>1</span>
-                  </li>
-                </ul>
+      <!-- Fundi i Kartës tjetër -->
+
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/pngwing.com.png" height="" alt="BMW X4" class="img-fluid">
               </div>
             </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card-box-a card-shadow">
-          <div class="img-box-a">
-            <img src="assets/img/property-10.jpg" alt="" class="img-a img-fluid">
-          </div>
-          <div class="card-overlay">
-            <div class="card-overlay-a-content">
-              <div class="card-header-a">
-                <h2 class="card-title-a">
-                  <a href="#">204 Mount
-                    <br /> Olive Road Two</a>
-                </h2>
-              </div>
-              <div class="card-body-a">
-                <div class="price-box d-flex">
-                  <span class="price-a">rent | $ 12.000</span>
-                </div>
-                <a href="property-single.html" class="link-a">Click here to view
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-              <div class="card-footer-a">
-                <ul class="card-info d-flex justify-content-around">
-                  <li>
-                    <h4 class="card-info-title">Area</h4>
-                    <span>340m
-                      <sup>2</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Beds</h4>
-                    <span>2</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Baths</h4>
-                    <span>4</span>
-                  </li>
-                  <li>
-                    <h4 class="card-info-title">Garages</h4>
-                    <span>1</span>
-                  </li>
-                </ul>
+      <!-- Fundi i Kartës tjetër -->
+
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/pngwing.com.png" height="" alt="BMW X4" class="img-fluid">
               </div>
             </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
           </div>
         </div>
       </div>
+      <!-- Fundi i Kartës tjetër -->
+
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/pngwing.com.png" height="" alt="BMW X4" class="img-fluid">
+              </div>
+            </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
+          </div>
+        </div>
+      </div>
+      <!-- Fundi i Kartës tjetër -->
+
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/pngwing.com.png" height="" alt="BMW X4" class="img-fluid">
+              </div>
+            </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
+          </div>
+        </div>
+      </div>
+      <!-- Fundi i Kartës tjetër -->
+
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/pngwing.com.png" height="" alt="BMW X4" class="img-fluid">
+              </div>
+            </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
+          </div>
+        </div>
+      </div>
+      <!-- Fundi i Kartës tjetër -->
+
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/pngwing.com.png" height="" alt="BMW X4" class="img-fluid">
+              </div>
+            </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
+          </div>
+        </div>
+      </div>
+      <!-- Fundi i Kartës tjetër -->
+
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/pngwing.com.png" height="" alt="BMW X4" class="img-fluid">
+              </div>
+            </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
+          </div>
+        </div>
+      </div>
+      <!-- Fundi i Kartës tjetër -->
+
+
+      <!-- Fillimi i Kartës tjetër -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="car-card shadow-custom">
+          <div class="col align-items-center">
+            <div class="col">
+              <div class="car-card-img">
+                <img src="assets/img/pngwing.com.png" height="" alt="BMW X4" class="img-fluid">
+              </div>
+            </div>
+            <div class="card-1">
+              <div class="car-card-body">
+                <h5 class="car-title">BMW X4</h5>
+                <div class="car-price">$45.00 / day</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                  <li><a class="bi bi-check"></a><strong> Doors:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Seats:</strong> 4</li>
+                  <li><a class="bi bi-check"></a><strong> Fuel:</strong> Diesel</li>
+                  <li><a class="bi bi-check"></a><strong> Features:</strong> Bluetooth, AC</li>
+                </ul>
+                <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+
+                
+              </div>
+            </div>
+            <button class="btn btn-primary btn-book mt-3 reserve-btn" onclick="openModal()">Rezervo</button>
+          </div>
+        </div>
+      </div>
+      <!-- Fundi i Kartës tjetër -->
+
+      
+      <div class="row ">
+        <div class="col-sm-12">
+          <nav class="pagination-a d-flex justify-content-center mt-5">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">
+                  <span class="bi bi-chevron-left"></span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item next">
+                <a class="page-link" href="#">
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+</section>
+
+
+  <!-- Cards for cars
+  <div class="cards-container ">
+    <div class="card">
+        <img src="assets/img/pngwing.com.png" alt="Car 1"> -->
+        <!-- <h3>Bmw m5</h3>
+        <p>Qmimi: $50/Dita</p> -->
+        <!-- <h5 class="car-title">BMW X4</h5>
+        <div class="car-price">$45.00 / day</div>
+        <ul class="car-details list-unstyled mt-2  mb-3">
+          <li><strong>Doors:</strong> 4</li>
+          <li><strong>Seats:</strong> 4</li>
+          <li><strong>Fuel:</strong> Diesel</li>
+          <li><strong>Features:</strong> Bluetooth, AC</li>
+        </ul>
+        <div class="total-cost"><strong>Total Cost:</strong> $250.00</div>
+        
+
+        <div class="infot-c">
+          <a class="bi bi-car-front-fill">2020</a>
+          <a href="http://"></a>
+          <a href="http://"></a>
+        </div>
+        <div class="butoni d-flex gap-5 justify-content-center ">
+          <button class="reserve-btn" onclick="openModal()">Reserve</button>
+          <button class="reserve-btn" onclick="openModal()">Reserve</button>
+        </div>
     </div>
+
+    <div class="card">
+        <img src="car2.jpg" alt="Car 2">
+        <h3>Car Model 2</h3>
+        <p>Price: $60/day</p>
+        <button class="reserve-btn" onclick="openModal()">Reserve</button>
+    </div>
+
+    <div class="card">
+        <img src="car3.jpg" alt="Car 3">
+        <h3>Car Model 3</h3>
+        <p>Price: $80/day</p>
+        <div class="butoni d-flex gap-4 ">
+          <button class="reserve-btn" onclick="openModal()">Reserve</button>
+          <button class="reserve-btn" onclick="openModal()">Reserve</button>
+        </div>
+       
+    </div>
+</div> -->
+
+<!-- Modal for reservation -->
+<div class="modal" id="reservationModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Rezervo Veturen tende</h2>
+        <form id="reservationForm">
+            <label for="name">Emri dhe Mbiemri:</label>
+            <input type="text" id="name" name="name" required>
+
+            
+
+            <label for="dates">Data e Rezervimit:</label>
+            <input type="date" id="dates" name="dates" required>
+
+            <label for="dates">Data e kthimit:</label>
+            <input type="date" id="dates" name="dates" required>
+
+            <label class="" for="dates">Kerkesa shtes</label>
+            <input type="extraNotes" id="dates" name="dates" required>
+
+            <label for="car">Car Model:</label>
+            <input type="text" id="car" name="car" value="" readonly>
+
+            <button type="submit">Confirm Reservation</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // JavaScript to open and close the modal
+    function openModal() {
+        document.getElementById('reservationModal').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('reservationModal').style.display = "none";
+    }
+
+    // To set car model name in the modal form
+    document.querySelectorAll('.reserve-btn').forEach((btn, index) => {
+        btn.addEventListener('click', function () {
+            const carModel = btn.closest('.card-1').querySelector('h5').textContent;
+            document.getElementById('car').value = carModel;
+        });
+    });
+
+    // Close modal if clicked outside
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('reservationModal')) {
+            closeModal();
+        }
+    };
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======= Footer ======= -->
+<section class="section-footer">
+  <div class="container">
     <div class="row">
-      <div class="col-sm-12">
-        <nav class="pagination-a">
-          <ul class="pagination justify-content-end">
-            <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1">
-                <span class="bi bi-chevron-left"></span>
-              </a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item active">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item next">
-              <a class="page-link" href="#">
-                <span class="bi bi-chevron-right"></span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <div class="col-sm-12 col-md-4">
+        <div class="widget-a">
+          <div class="w-header-a">
+            <h3 class="w-title-a text-brand">rent a <strong class="color-b">CAR</strong> </h3>
+          </div>
+          <div class="w-body-a">
+            <p class="w-text-a color-text-a">
+              Mirë se vini në Rent a Car Komanin! Ne ofrojmë automjete moderne, të sigurta dhe të përshtatshme 
+              për çdo nevojë tuajën, duke garantuar udhëtime të rehatshme dhe pa shqetësime në çdo destinacion.
+            </p>
+          </div>
+          <div class="w-footer-a">
+            <ul class="list-unstyled">
+              <li class="color-a">
+                <span class="color-text-a">Email .</span>
+                contact@example.com
+              </li>
+              <li class="color-a">
+                <span class="color-text-a">Numri Kontaktues .</span> +383 45 945 234
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 section-md-t3">
+        <div class="widget-a">
+          <div class="w-header-a">
+            <h3 class="w-title-a text-brand">Kompania Jonë</h3>
+          </div>
+          <div class="w-body-a">
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Harta për Navigim</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Veturat</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Rreth Nesh</a>
+                </li>
+                
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Politika e privatësisë</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 section-md-t3">
+        <div class="widget-a">
+          <div class="w-header-a">
+            <h3 class="w-title-a text-brand">Lokacionet tona</h3>
+          </div>
+          <div class="w-body-a">
+            <ul class="list-unstyled">
+              <li class="item-list-a">
+                <i class="bi bi-chevron-right"></i>
+                <a href="#">Prishtin</a>
+              </li>
+              <li class="item-list-a">
+                <i class="bi bi-chevron-right"></i> <a href="#">Ferizaj</a>
+              </li>
+              <li class="item-list-a">
+                <i class="bi bi-chevron-right"></i>
+                <a href="#">Gjilan</a>
+              </li>
+              <li class="item-list-a">
+                <i class="bi bi-chevron-right"></i>
+                <a href="#">Pej</a>
+              </li>
+              <li class="item-list-a">
+                <i class="bi bi-chevron-right"></i>
+                <a href="#">Prizeren</a>
+              </li>
+              <li class="item-list-a">
+                <i class="bi bi-chevron-right"></i>
+                <a href="#">AirPort</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</section><!-- End Property Grid Single-->
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="nav-footer">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#">Krye Faqja</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Veturat</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Rreth nesh</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Ekipi</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Kontakti</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="socials-a">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="bi bi-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="bi bi-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright-footer">
+          <p class="copyright color-text-a">
+            &copy; Copyright
+            <span class="color-a">RentaCar</span> Të gjitha të drejtat e rezervuara.
+          </p>
+        </div>
+        <div class="credits">
+          <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
+      -->
+          Dizajnuar nga  <a href="https://bootstrapmade.com/"> Ren a Car Group</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End  Footer -->
+
 
 
 </body>

@@ -44,3 +44,23 @@ L.marker([42.667542, 21.166191], { icon: customIcon })
   .addTo(map)
   .bindPopup("Lokacioni Prishtin")
   .openPopup();
+
+  L.marker([42.4634, 21.4691], { icon: customIcon })
+  .addTo(map)
+  .bindPopup("Lokacioni Gjilan")
+  .openPopup();
+
+  L.marker([42.6593, 20.2880], { icon: customIcon })
+  .addTo(map)
+  .bindPopup("Lokacioni peje")
+  .openPopup();
+
+  L.marker([42.2139, 20.7397], { icon: customIcon })
+  .addTo(map)
+  .bindPopup("Lokacioni prizren")
+  .openPopup();
+
+  L.marker([42.5728, 21.0359], { icon: customIcon })
+  .addTo(map)
+  .bindPopup("Lokacioni AirPort")
+  .openPopup();
