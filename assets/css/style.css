@@ -2416,3 +2416,8 @@ form button {
 form button:hover {
   background-color: #45a049;
 }
+
+
+.carousel-control-next{
+  width: 100px;
+}
