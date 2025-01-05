@@ -2421,3 +2421,8 @@ form button:hover {
 .carousel-control-next{
   width: 100px;
 }
+
+.lng-b{
+  display: flex ;
+  justify-content: flex-end   ;
+}

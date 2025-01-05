@@ -58,9 +58,9 @@
 
   <body>
     <!-- ======= Property Search Section ======= -->
-    <div class="click-closed"></div>
+    <!-- <div class="click-closed"></div> -->
     <!--/ Form Search Star /-->
-    <div class="box-collapse">
+    <!-- <div class="box-collapse">
       <div class="title-box-d">
         <h3 class="title-d">Search Property</h3>
       </div>
@@ -171,7 +171,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
     <!-- End Property Search Section -->>
 
     <!-- ======= Header/Navbar ======= -->
@@ -190,8 +190,8 @@
           <span></span>
           <span></span>
         </button>
-        <a class="navbar-brand text-brand" href="index.html"
-          >rent a <span class="color-b">CAR</span></a
+        <a class="navbar-brand text-brand translate" href="index.html"
+          >rent a <span class="color-b translate">CAR</span></a
         >
 
         <div
@@ -200,19 +200,19 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Krye Faqja</a>
+              <a class="nav-link active translate" href="index.html"  data-lang-al="Krye Faqja" data-lang-en="Home"></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="veturat.html">Veturat</a>
+              <a class="nav-link translate" href="veturat.html" data-lang-al="Veturat" data-lang-en="Cars"></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="kontakti.html">Kontakti</a>
+              <a class="nav-link translate" href="kontakti.html" data-lang-al="Kontakti" data-lang-en="Contact"></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="ekipi.html">Ekipi</a>
+              <a class="nav-link translate " href="ekipi.html" data-lang-al="Kontakti" data-lang-en="Contact">Ekipi</a>
             </li>
 
             <!-- <li class="nav-item dropdown">
@@ -228,16 +228,56 @@
           </ul>
         </div>
 
-        <button
+        <!-- <button
           type="button"
           class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse"
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo01"
         >
           <i class="bi bi-search"></i>
-        </button>
+        </button> -->
+<!-- butoni i ndrrimit te gjuhes nav -->
+        <div class="lng-b">
+          <button class="language-menu " data-lang="al" onclick="changeLanguage('al')">
+              <img class="language-flag" src="assets/img/alb.jpg" alt="Albanian Flag" title="Albanian Flag">
+              <span></span>
+          </button>
+          <button class="language-menu" data-lang="en" onclick="changeLanguage('en')">
+              <img class="language-flag" src="assets/img/am.png" alt="American Flag" title="American Flag">
+              <span></span>
+          </button>
+        </div>
       </div>
     </nav>
+
+    <style>
+      .language-menu { display: flex; flex-direction: column; align-items: center; cursor: pointer; border: none; background-color:none ; }
+      .language-flag { width: 40px; height: 40px; border-radius: 50%; background-color:none }
+      .active { font-weight: bold; }
+  </style>
+
+    <script>
+      function changeLanguage(lang) {
+          
+          document.querySelectorAll('.translate').forEach(el => {
+              const translation = el.dataset[`lang${lang.charAt(0).toUpperCase() + lang.slice(1)}`];
+              if (translation) el.textContent = translation;
+          });
+
+          localStorage.setItem('language', lang);
+          
+          document.querySelectorAll('.language-menu').forEach(btn => {
+              const isActive = btn.dataset.lang === lang;
+              btn.classList.toggle('active', isActive);
+          });
+      }
+
+      // Al as default language
+      document.addEventListener('DOMContentLoaded', () => {
+          const savedLanguage = localStorage.getItem('language') || 'al';
+          changeLanguage(savedLanguage);
+      });
+  </script>
     <!-- End Header/Navbar -->
 
     <!-- ======= Intro Section ======= -->
@@ -357,16 +397,18 @@
                   <div class="date" id="date2" data-target-input="nearest">
                     <input
                       type="text"
-                      class="form-control datetimepicker-input"
+                      class="form-control datetimepicker-input translate"
                       placeholder="Data e kthimit"
-                      data-target="#date2"
+                      data-target="#date2" 
+                      data-lang-en="City"
+
                       data-toggle="datetimepicker"
                     />
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <select class="form-select">
-                    <option selected>Qyteti</option>
+                  <select class="form-select translate">
+                    <option selected class="translate" data-lang-al="Qyteti" data-lang-en="City"></option>
                     <option value="1">Prishtin</option>
                     <option value="2">Ferizaj</option>
                     <option value="3">Gjilan</option>
@@ -374,7 +416,7 @@
                 </div>
                 <div class="col-md-3">
                   <select class="form-select">
-                    <option selected>Modeli</option>
+                      <option selected class="translate" data-lang-al="Modeli"  data-lang-en="Model" ></option>
                     <option value="1">Bmw</option>
                     <option value="2">Mercedes</option>
                     <option value="3">Audi</option>
@@ -396,8 +438,8 @@
        <!-- Booking Start -->
        <section class="swipe-car">
         <div class="container mb-5">
-          <h2 class="color-a mb-4 text-uppercase d-flex justify-content-center gap-3">
-            Veturat më të <strong class="color-b  text-center"> kërkuara</strong>
+          <h2 class="color-a mb-4 text-uppercase d-flex justify-content-center gap-3 translate" data-lang-al="Veturat më të kerkuara" data-lang-en="Most wanted cars">
+             <strong class="color-b  text-center "> </strong>
           </h2>
           <div id="carCarousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators -->
@@ -480,7 +522,7 @@
             </button>
           </div>
           <div class="text-center mt-3">
-            <a href="about.html" class="btn-veturat">Shiko  Veturat</a>
+            <a href="about.html" class="btn-veturat translate" data-lang-al="Shiko më shumë" data-lang-en="Explore more"></a>
           </div>
         </div>
 
@@ -499,7 +541,7 @@
             <div class="col-md-12">
               <div class="title-wrap d-flex justify-content-between">
                 <div class="title-box">
-                  <h2 class="title-a">Sherbimet tona</h2>
+                  <h2 class="title-a translate" data-lang-al="Shërbiet tona" data-lang-en="Our Series"></h2></h2>
                 </div>
               </div>
             </div>
@@ -511,22 +553,27 @@
                   <div class="card-box-ico">
                     <span class="bi bi-car-front-fill "></span>
                   </div>
-                  <div class="card-title-c align-self-center">
-                    <h2 class="title-c color-b text-center">Vetura me Qira</h2>
+                  <div class="card-title-c align-self-center p-2">
+                    <h2 class="title-c color-b text-center translate" data-lang-al="Vetura me Qira" data-lang-en="Rent a Car"></h2>
                   </div>
                 </div>
                 <div class="card-body-c">
-                  <p class="content-c">
-                    Ofroni një gamë të gjerë makinash për çdo nevojë dhe
-                    mundësi. Shërbim i shpejtë, i sigurt dhe i përshtatshëm për
-                    udhëtime afatshkurtra ose afatgjata. Kemi makina për çdo
-                    preferencë: nga ekonomike deri tek luks, gjithmonë të
-                    mirëmbajtura dhe të gatshme për udhëtim. .
+                  <p class="content-c translate" data-lang-al="Ofrojmë një gamë të gjerë makinash për çdo nevojë dhe
+                  mundësi. Shërbim i shpejtë, i sigurt dhe i përshtatshëm për
+                  udhëtime afatshkurtra ose afatgjata. Kemi makina për çdo
+                  preferencë: nga ekonomike deri tek luks, gjithmonë të
+                  mirëmbajtura dhe të gatshme për udhëtim." 
+                  
+                  data-lang-en="We offer a wide range of cars for every need and
+                  opportunity. Fast, safe and convenient service for
+                  short or long-term trips. We have cars for every
+                  preference: from economical to luxury, always
+                  maintained and ready for the trip."">
+                    
                   </p>
                 </div>
-                <div class="card-footer-c">
-                  <a href="#" class="link-c link-icon"
-                    >Read more
+                <div class="card-footer-c translate">
+                  <a href="#" class="link-c link-icon translate" data-lang-al="Lexo më shumë" data-lang-en="Read more"></a>
                     <span class="bi bi-chevron-right "></span>
                   </a>
                 </div>
@@ -539,21 +586,24 @@
                     <span class="bi bi-calendar4-week"></span>
                   </div>
                   <div class="card-title-c align-self-center">
-                    <h2 class="title-c color-b text-center">Qira afatgjate</h2>
+                    <h2 class="title-c color-b text-center translate" data-lang-al="Qira afatgjate" data-lang-en="Long-term rental" ></h2>
                   </div>
                 </div>
                 <div class="card-body-c">
-                  <p class="content-c">
-                    Ofroni vetura me qira sipas nevojës suaj – ditore, javore,
-                    mujore apo për periudha afatgjata. Zgjidhni paketën që ju
-                    përshtatet më mirë dhe përfitoni nga komoditeti, çmimet e
-                    arsyeshme dhe fleksibiliteti ynë!
+                  <p class="content-c translate" 
+                  data-lang-al="Ofrojmë vetura me qira sipas nevojës suaj – ditore, javore,
+                  mujore apo për periudha afatgjata. Zgjidhni paketën që ju
+                  përshtatet më mirë dhe përfitoni nga komoditeti, çmimet e
+                  arsyeshme dhe fleksibiliteti ynë!" 
+                  
+                  data-lang-en="We offer car rentals according to your needs – daily, weekly, monthly or long-term. Choose the package that suits you best and benefit from our convenience, reasonable prices and flexibility!">
+                    
                   </p>
                 </div>
                 <div class="card-footer-c">
-                  <a href="#" class="link-c link-icon"
-                    >Read more
-                    <span class="bi bi-calendar4-week"></span>
+                  <a href="#" class="link-c link-icon translate" data-lang-al="Lexo më shumë" data-lang-en="Read more"
+                    > </a>
+                    <span class="bi bi-chevron-right "></span>
                   </a>
                 </div>
               </div>
@@ -564,21 +614,25 @@
                   <div class="card-box-ico">
                     <span class="bi bi-card-checklist"></span>
                   </div>
-                  <div class="card-title-c align-self-center">
-                    <h2 class="title-c color-b text-center pl-4">Sherbim i veqant</h2>
+                  <div class="card-title-c align-self-center ">
+                    <h2 class="title-c color-b text-center pl-4 translate" data-lang-al="Sherbim i veqant" data-lang-en="Special service"></h2>
                   </div>
                 </div>
                 <div class="card-body-c">
-                  <p class="content-c">
-                    Ne kujdesemi për gjithçka! E dorëzojmë veturën aty ku ju
-                    ndodheni dhe e marrim përsëri pas përfundimit të qirasë.
-                    Shërbim i shpejtë, i përshtatshëm dhe pa stres – gjithmonë
-                    në kohë për ju!
+                  <p class="content-c translate" 
+                  data-lang-al="Ne kujdesemi për gjithçka! E dorëzojmë veturën aty ku ju
+                  ndodheni dhe e marrim përsëri pas përfundimit të qirasë.
+                  Shërbim i shpejtë, i përshtatshëm dhe pa stres – gjithmonë
+                  në kohë për ju!"
+                   
+                  data-lang-en="We take care of everything! We deliver the car to your location and pick it up again at the end of the rental.
+                  Fast, convenient and stress-free service – always
+                  on time for you!">
+                   
                   </p>
                 </div>
                 <div class="card-footer-c">
-                  <a href="#" class="link-c link-icon"
-                    >Read more
+                  <a href="#" class="link-c link-icon translate" data-lang-al="Lexo më shumë" data-lang-en="Read more" > </a>
                     <span class="bi bi-chevron-right"></span>
                   </a>
                 </div>
@@ -951,7 +1005,7 @@
             <div class="col-md-12">
               <div class="title-wrap d-flex justify-content-between">
                 <div class="title-box">
-                  <h2 class="title-a">Disa pershkrime nga klientet</h2>
+                  <h2 class="title-a translate" data-lang-al="Disa pershkrime nga klientet" data-lang-en="Some descriptions from customers"></h2>
                 </div>
               </div>
             </div>
@@ -976,9 +1030,13 @@
                         <i class="bi bi-chat-quote-fill"></i>
                       </div>
                       <div class="testimonials-content">
-                        <p class="testimonial-text">
-                          Jam shumë i kënaqur me shërbimin nga Rent a Car Komanin. Procesi i rezervimit ishte i shpejtë dhe i lehtë,
-                           dhe makina ishte pikërisht ajo që kisha kërkuar. Çmimet janë shumë të arsyeshme dhe shërbimi i klientit ishte përtej pritshmërive!
+                        <p class="testimonial-text translate"
+                        data-lang-al="Jam shumë i kënaqur me shërbimin nga Rent a Car Komanin. Procesi i rezervimit ishte i shpejtë dhe i lehtë,
+                        dhe makina ishte pikërisht ajo që kisha kërkuar. Çmimet janë shumë të arsyeshme dhe shërbimi i klientit ishte përtej pritshmërive!" 
+                        
+                        data-lang-en="I am very pleased with the service from Rent a Car Komanin. The booking process was quick and easy,
+                        and the car was exactly what I had requested. The prices are very reasonable and the customer service was beyond expectations!">
+                          
                         </p>
                       </div>
                       <div class="testimonial-author-box">
@@ -1012,9 +1070,13 @@
                         <i class="bi bi-chat-quote-fill"></i>
                       </div>
                       <div class="testimonials-content">
-                        <p class="testimonial-text">
-                          Përvoja ime me Rent a Car Komanin ishte e shkëlqyer! Automjeti ishte i pastër, i rehatshëm dhe në gjendje perfekte.
-                           Stafi ishte shumë miqësor dhe i gatshëm për të ndihmuar me çdo pyetje. Me siguri do të zgjedh këtë kompani për udhëtimet e mia të ardhshme!
+                        <p class="testimonial-text translate" 
+                        data-lang-al=" Përvoja ime me Rent a Car Komanin ishte e shkëlqyer! Automjeti ishte i pastër, i rehatshëm dhe në gjendje perfekte.
+                        Stafi ishte shumë miqësor dhe i gatshëm për të ndihmuar me çdo pyetje. Me siguri do të zgjedh këtë kompani për udhëtimet e mia të ardhshme!" 
+                        
+                        data-lang-en="My experience with Rent a Car Komanin was excellent! The vehicle was clean, comfortable and in perfect condition.
+                        The staff was very friendly and willing to help with any questions. I will definitely choose this company for my future trips!">
+                         
                         </p>
                       </div>
                       <div class="testimonial-author-box">
@@ -1051,19 +1113,23 @@
                 <h3 class="w-title-a text-brand">rent a <strong class="color-b">CAR</strong> </h3>
               </div>
               <div class="w-body-a">
-                <p class="w-text-a color-text-a">
-                  Mirë se vini në Rent a Car Komanin! Ne ofrojmë automjete moderne, të sigurta dhe të përshtatshme 
-                  për çdo nevojë tuajën, duke garantuar udhëtime të rehatshme dhe pa shqetësime në çdo destinacion.
+                <p class="w-text-a color-text-a translate"
+                data-lang-al="Mirë se vini në Rent a Car Komanin! Ne ofrojmë automjete moderne, të sigurta dhe të përshtatshme 
+                për çdo nevojë tuajën, duke garantuar udhëtime të rehatshme dhe pa shqetësime në çdo destinacion." 
+                
+                data-lang-en="Welcome to Rent a Car Komanin! We offer modern, safe and convenient vehicles
+                for your every need, guaranteeing comfortable and worry-free trips to any destination." >
+                  
                 </p>
               </div>
               <div class="w-footer-a">
                 <ul class="list-unstyled">
                   <li class="color-a">
                     <span class="color-text-a">Email .</span>
-                    contact@example.com
+                    rentacar@gmail.com
                   </li>
                   <li class="color-a">
-                    <span class="color-text-a">Numri Kontaktues .</span> +383 45 945 234
+                    <span class="color-text-a translate" data-lang-al="Numri Kontaktues ." data-lang-en="Contact Number ."></span> +383 45 945 234
                   </li>
                 </ul>
               </div>
@@ -1072,30 +1138,38 @@
           <div class="col-sm-12 col-md-4 section-md-t3">
             <div class="widget-a">
               <div class="w-header-a">
-                <h3 class="w-title-a text-brand">Kompania Jonë</h3>
+                <h3 class="w-title-a text-brand translate" data-lang-al="Kompania Jonë" data-lang-en="Our Company"></h3>
               </div>
               <div class="w-body-a">
                 <div class="w-body-a">
                   <ul class="list-unstyled">
                     <li class="item-list-a">
                       <i class="bi bi-chevron-right"></i>
-                      <a href="#">Harta për Navigim</a>
+                      <a href="#" class="translate" data-lang-al="Harta për Navigim" data-lang-en="Navigation Map"></a>
                     </li>
+                    <!-- <li class="item-list-a">
+                      <i class="bi bi-chevron-right" class="translate" data-lang-al="Kontakti" data-lang-en="Contact"></i> <a href="#">Legal</a>
+                    </li> -->
                     <li class="item-list-a">
-                      <i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
+                      <i class="bi bi-chevron-right"></i>
+                      <a href="#" class="translate" data-lang-al="Krye Faqja" data-lang-en="Home"></a>
                     </li>
                     <li class="item-list-a">
                       <i class="bi bi-chevron-right"></i>
-                      <a href="#">Veturat</a>
+                      <a href="#" class="translate" data-lang-al="Veturat" data-lang-en="Cars"></a>
                     </li>
                     <li class="item-list-a">
                       <i class="bi bi-chevron-right"></i>
-                      <a href="#">Rreth Nesh</a>
+                      <a href="#" class="translate" data-lang-al="Rreth Nesh" data-lang-en="About Us"></a>
                     </li>
                     
                     <li class="item-list-a">
                       <i class="bi bi-chevron-right"></i>
-                      <a href="#">Politika e privatësisë</a>
+                      <a href="#" class="translate" data-lang-al="Politika e privatësisë" data-lang-en="Policy Privacy"></a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="bi bi-chevron-right"></i>
+                      <a href="#" class="translate" data-lang-al="Kontakti" data-lang-en="Contact"></a>
                     </li>
                   </ul>
                 </div>
@@ -1105,7 +1179,7 @@
           <div class="col-sm-12 col-md-4 section-md-t3">
             <div class="widget-a">
               <div class="w-header-a">
-                <h3 class="w-title-a text-brand">Lokacionet tona</h3>
+                <h3 class="w-title-a text-brand translate" data-lang-al="Lokacionet tona" data-lang-en="Our Locations"></h3>
               </div>
               <div class="w-body-a">
                 <ul class="list-unstyled">
@@ -1146,19 +1220,19 @@
             <nav class="nav-footer">
               <ul class="list-inline">
                 <li class="list-inline-item">
-                  <a href="#">Krye Faqja</a>
+                  <a href="#"class="translate" data-lang-al="Krye Faqja" data-lang-en="Home"></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">Veturat</a>
+                  <a href="#" class="translate" data-lang-al="Veturat" data-lang-en="Cars"></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">Rreth nesh</a>
+                  <a href="#" class="translate" data-lang-al="Rreth Nesh" data-lang-en="About Us"></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">Ekipi</a>
+                  <a href="#" class="translate" data-lang-al="Ekipi" data-lang-en="Team"></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">Kontakti</a>
+                  <a href="#" class="translate" data-lang-al="Kontakti" data-lang-en="Contact"></a>
                 </li>
               </ul>
             </nav>
@@ -1187,9 +1261,9 @@
               </ul>
             </div>
             <div class="copyright-footer">
-              <p class="copyright color-text-a">
+              <p class="copyright color-text-a" class="translate" data-lang-al="&copy; Copyright " data-lang-en="Contact">
                 &copy; Copyright
-                <span class="color-a">RentaCar</span> Të gjitha të drejtat e rezervuara.
+                <span class="color-a">RentaCar</span> <span class="translate" data-lang-al="Të gjitha të drejtat e rezervuara. " data-lang-en="All rights reserved." >span> 
               </p>
             </div>
             <div class="credits">
@@ -1199,7 +1273,8 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
           -->
-              Dizajnuar nga  <a href="https://bootstrapmade.com/"> Ren a Car Group</a>
+              <span class="translate" data-lang-al="Dizajnuar nga" data-lang-en="Designed by">  </span><a href="https://bootstrapmade.com/"> 
+                <span class="translate" data-lang-al="Grupi Rent a Car" data-lang-en="Ren a Car Group">  </span> </a>
             </div>
           </div>
         </div>
