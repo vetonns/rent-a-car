@@ -326,7 +326,6 @@ a:hover {
   text-decoration: none;
   font-size: 2.6rem;
   font-weight: 600;
-  
 }
 
 .title-link {
@@ -1168,7 +1167,7 @@ a:hover {
     margin-bottom: 2.5rem;
   }
 }
-.card-box-d{
+.card-box-d {
   border-radius: 5px;
 }
 .card-box-a span,
@@ -1336,7 +1335,6 @@ a:hover {
 
 .card-header-a .card-title-a a {
   color: #ffffff;
-  
 }
 
 .card-body-a {
@@ -1410,20 +1408,18 @@ a:hover {
   text-align: right;
   margin-top: 2rem;
 }
-.grid-option{
+.grid-option {
   border: 3px solid #18d26e;
   width: 15%;
   margin-bottom: 2rem;
-  float:right;
-  border-color:#18d26e;
-
+  float: right;
+  border-color: #18d26e;
 }
 .custom-select {
-  
-  border-color:#18d26e;
+  border-color: #18d26e;
 }
 
-.custom-select option{
+.custom-select option {
   color: #2b2a2a;
   border-radius: 1px;
 }
@@ -1431,8 +1427,6 @@ a:hover {
 .property-grid .grid-option .custom-select {
   border-radius: 0;
   width: 200px;
-  
-  
 }
 
 .property-grid .grid-option .custom-select:hover,
@@ -2021,6 +2015,17 @@ a:hover {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
+.contact {
+  margin-bottom: 35px;
+}
+
+.contact-form {
+  border-top: 3px solid rgba(24, 210, 110, 0.5); /* 50% transparency */
+  margin-top: 35px;
+  padding-top: 35px;
+}
+
 .form-as #sendmessage {
   color: #2eca6a;
   border: 1px solid #26a356;
@@ -2224,13 +2229,9 @@ footer .credits {
   
 } */
 
-.custom-arrow{
+.custom-arrow {
   color: #2eca6a;
-  
 }
-
-
-
 
 /* kartat e kerrev */
 
@@ -2238,7 +2239,6 @@ footer .credits {
 .car-listing {
   margin-top: 0px;
   text-align: center;
-  
 }
 
 /* Stili për Kartat */
@@ -2248,7 +2248,6 @@ footer .credits {
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 0.3s, transform 0.3s;
-  
 }
 
 .car-card:hover {
@@ -2257,19 +2256,17 @@ footer .credits {
 }
 
 .car-card-img img {
- 
   width: 100%;
   max-height: 50%;
   height: auto;
   border-bottom: 4px solid #26a356;
   border-radius: 4px;
-  
 }
 
-.car-card-body   {
+.car-card-body {
   display: flex;
   flex-direction: column;
-  
+
   align-items: flex-start;
   padding: 40px;
   text-align: left;
@@ -2312,15 +2309,11 @@ footer .credits {
 .btn-book:hover {
   background-color: #26a356;
 }
-.cart-sec{
+.cart-sec {
   margin-top: 300px;
 }
 
-
-
-
 /* provo */
-
 
 .cards-container {
   display: flex;
@@ -2346,7 +2339,6 @@ footer .credits {
 }
 
 .reserve-btn {
-  
   color: white;
   padding: 10px;
   border: none;
@@ -2354,7 +2346,6 @@ footer .credits {
 }
 
 .reserve-btn:hover {
-  
 }
 
 /* Modal Styles */
@@ -2369,7 +2360,6 @@ footer .credits {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
- 
 }
 
 .modal-content {
@@ -2409,7 +2399,7 @@ form input {
 }
 
 form button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px;
   border: none;
@@ -2420,12 +2410,11 @@ form button:hover {
   background-color: #45a049;
 }
 
-
-.carousel-control-next{
+.carousel-control-next {
   width: 100px;
 }
 
-.lng-b{
-  display: flex ;
-  justify-content: flex-end   ;
+.lng-b {
+  display: flex;
+  justify-content: flex-end;
 }

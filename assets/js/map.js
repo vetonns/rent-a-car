@@ -9,20 +9,20 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
-// Function to enable scroll wheel zoom when the map is clicked
+// Function to enable scroll wheel zoom
 function enableScrollWheelZoom() {
-  map.scrollWheelZoom.disable();
+  map.scrollWheelZoom.enable();
 }
 
-// Event listener to enable scroll wheel zoom when the map is clicked
-map.on("click", enableScrollWheelZoom);
-
-// Function to disable scroll wheel zoom when the map is not clicked
+// Function to disable scroll wheel zoom
 function disableScrollWheelZoom() {
   map.scrollWheelZoom.disable();
 }
 
-// Event listener to disable scroll wheel zoom when the map loses focus (clicked elsewhere on the page)
+// Event listener to enable scroll wheel zoom on map click
+map.on("click", enableScrollWheelZoom);
+
+// Event listener to disable scroll wheel zoom when the mouse leaves the map
 map.on("mouseout", disableScrollWheelZoom);
 
 // Custom marker icon
@@ -33,34 +33,27 @@ var customIcon = L.icon({
   popupAnchor: [0, -32], // Point from which the popup should open relative to the iconAnchor
 });
 
-// Adding a marker with a custom icon
-
+// Adding markers with a custom icon
 L.marker([42.37056, 21.15528], { icon: customIcon })
   .addTo(map)
-  .bindPopup("Lokacioni Ferizaj")
-  .openPopup();
+  .bindPopup("Lokacioni Ferizaj");
 
 L.marker([42.667542, 21.166191], { icon: customIcon })
   .addTo(map)
-  .bindPopup("Lokacioni Prishtin")
-  .openPopup();
+  .bindPopup("Lokacioni Prishtin");
 
-  L.marker([42.4634, 21.4691], { icon: customIcon })
+L.marker([42.4634, 21.4691], { icon: customIcon })
   .addTo(map)
-  .bindPopup("Lokacioni Gjilan")
-  .openPopup();
+  .bindPopup("Lokacioni Gjilan");
 
-  L.marker([42.6593, 20.2880], { icon: customIcon })
+L.marker([42.6593, 20.288], { icon: customIcon })
   .addTo(map)
-  .bindPopup("Lokacioni peje")
-  .openPopup();
+  .bindPopup("Lokacioni Peje");
 
-  L.marker([42.2139, 20.7397], { icon: customIcon })
+L.marker([42.2139, 20.7397], { icon: customIcon })
   .addTo(map)
-  .bindPopup("Lokacioni prizren")
-  .openPopup();
+  .bindPopup("Lokacioni Prizren");
 
-  L.marker([42.5728, 21.0359], { icon: customIcon })
+L.marker([42.5728, 21.0359], { icon: customIcon })
   .addTo(map)
-  .bindPopup("Lokacioni AirPort")
-  .openPopup();
+  .bindPopup("Lokacioni AirPort");
