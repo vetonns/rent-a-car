@@ -204,15 +204,15 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link translate" href="veturat.html" data-lang-al="Veturat" data-lang-en="Cars"></a>
+              <a class="nav-link  translate" href="veturat.html" data-lang-al="Veturat" data-lang-en="Cars"></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link translate" href="kontakti.html" data-lang-al="Kontakti" data-lang-en="Contact"></a>
+              <a class="nav-link translate" href="ekipi.html" data-lang-al="Ekipi" data-lang-en="Team"></a>
             </li>
-
+    
             <li class="nav-item">
-              <a class="nav-link translate " href="ekipi.html" data-lang-al="Kontakti" data-lang-en="Contact">Ekipi</a>
+              <a class="nav-link translate  " href="kontakti.html" data-lang-al="Kontakti" data-lang-en="Contact"></a>
             </li>
 
             <!-- <li class="nav-item dropdown">
@@ -224,10 +224,14 @@
               <a class="dropdown-item " href="agent-single.html">Agent Single</a>
             </div>
           </li> -->
+
+          
             
           </ul>
-        </div>
 
+          
+        </div>
+        
         <!-- <button
           type="button"
           class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse"
@@ -236,8 +240,62 @@
         >
           <i class="bi bi-search"></i>
         </button> -->
+
+        <div class="dropdown">
+          <button
+            class="btn btn dropdown-toggle translate"
+            type="button"
+            id="languageDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-lang-al="Zgjedh Gjuhen" data-lang-en="Select Language"
+          >
+            
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li>
+              <button class="dropdown-item language-menu" data-lang="al" onclick="changeLanguage('al')">
+                <img class="language-flag" src="assets/img/alb.jpg" alt="Albanian Flag" title="Albanian Flag">
+                Albanian
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item language-menu" data-lang="en" onclick="changeLanguage('en')">
+                <img class="language-flag" src="assets/img/am.png" alt="American Flag" title="American Flag">
+                English
+              </button>
+            </li>
+          </ul>
+        </div>
+        
+        <style>
+          /* .dropdown{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; */
+          
+          .language-menu {
+            display: flex;
+            align-items: flex-start;
+            justify-content: c;
+            gap: 10px;
+            border: none;
+            background: none;
+            
+            width: 100%;
+          }
+          .language-flag {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          }
+        </style>
+        
+
+
+
 <!-- butoni i ndrrimit te gjuhes nav -->
-        <div class="lng-b">
+        <!-- <div class="lng-b">
           <button class="language-menu " data-lang="al" onclick="changeLanguage('al')">
               <img class="language-flag" src="assets/img/alb.jpg" alt="Albanian Flag" title="Albanian Flag">
               <span></span>
@@ -247,7 +305,12 @@
               <span></span>
           </button>
         </div>
-      </div>
+      </div> -->
+
+
+
+
+      
     </nav>
 
     <style>
@@ -256,28 +319,7 @@
       .active { font-weight: bold; }
   </style>
 
-    <script>
-      function changeLanguage(lang) {
-          
-          document.querySelectorAll('.translate').forEach(el => {
-              const translation = el.dataset[`lang${lang.charAt(0).toUpperCase() + lang.slice(1)}`];
-              if (translation) el.textContent = translation;
-          });
-
-          localStorage.setItem('language', lang);
-          
-          document.querySelectorAll('.language-menu').forEach(btn => {
-              const isActive = btn.dataset.lang === lang;
-              btn.classList.toggle('active', isActive);
-          });
-      }
-
-      // Al as default language
-      document.addEventListener('DOMContentLoaded', () => {
-          const savedLanguage = localStorage.getItem('language') || 'al';
-          changeLanguage(savedLanguage);
-      });
-  </script>
+    <script src="assets/js/language.js"></script>
     <!-- End Header/Navbar -->
 
     <!-- ======= Intro Section ======= -->
@@ -388,8 +430,8 @@
                       type="text"
                       class="form-control datetimepicker-input"
                       placeholder="Data e marrjes"
-                      data-target="#date1"
-                      data-toggle="datetimepicker"
+                      type="date" id="dates" name="dates" required
+                      
                     />
                   </div>
                 </div>

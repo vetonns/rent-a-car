@@ -326,6 +326,7 @@ a:hover {
   text-decoration: none;
   font-size: 2.6rem;
   font-weight: 600;
+  
 }
 
 .title-link {
@@ -1167,7 +1168,9 @@ a:hover {
     margin-bottom: 2.5rem;
   }
 }
-
+.card-box-d{
+  border-radius: 5px;
+}
 .card-box-a span,
 .card-box-b span,
 .card-box-c span,
@@ -1333,7 +1336,7 @@ a:hover {
 
 .card-header-a .card-title-a a {
   color: #ffffff;
-  text-decoration: none;
+  
 }
 
 .card-body-a {
