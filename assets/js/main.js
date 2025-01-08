@@ -210,29 +210,3 @@
     },
   });
 })();
-
-// Add event listener to the submit button
-document
-  .querySelector(".btn-primary.smb")
-  .addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default action (e.g., page reload)
-
-    // Get the values of inputs and selects
-    const price = document.getElementById("price").value;
-    const details = document.getElementById("details").value;
-    const city = document.querySelectorAll(".form-select")[1].value;
-    const model = document.querySelectorAll(".form-select")[0].value;
-
-    // Create an object with form data
-    const formData = {
-      price,
-      details,
-      city,
-      model,
-    };
-
-    // Log the form data
-    console.log(formData);
-
-    // Perform further actions, like sending data to a server
-  });

@@ -2245,7 +2245,7 @@ footer .credits {
   background-color: #18d26e;
   color: white;
 }
-.smb :hover{
+.smb :hover {
   background-color: #000000;
 }
 
@@ -2308,10 +2308,8 @@ footer .credits {
 
 .custom-arrow {
   color: #2eca6a;
-
-
 }
-.custom-arrow :hover{
+.custom-arrow :hover {
   background-color: none;
 }
 
@@ -2425,7 +2423,6 @@ footer .credits {
   padding: 10px;
   border: none;
   cursor: pointer;
-  
 }
 
 .reserve-btn:hover {
@@ -2545,27 +2542,64 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-.res-b{
+.res-b {
   border-radius: 5px;
-  
 }
-.im-1 img{
+.im-1 img {
   width: 400%;
-  
 }
 .spwipe-c {
-  background-color: none ;
-  padding: 0%
+  background-color: none;
+  padding: 0%;
 }
-.spwipe-c :hover{
+.spwipe-c :hover {
   background-color: none;
   padding: 0%;
 }
 
 .smb {
   background-color: #18d26e;
+  color: 000000;
+}
+.smb:hover {
+  background-color: #000000;
   color: white;
 }
-.smb :hover{
-  background-color: #000000;
+
+/* Remove the blue focus outline when the button is focused */
+.carousel-control-next:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* If you want to prevent the hover state from applying a background, you can add this */
+.carousel-control-next:hover {
+  background-color: transparent;
+}
+
+/* Remove the blue focus outline when the button is focused */
+.carousel-control-prev:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* If you want to prevent the hover state from applying a background, you can add this */
+.carousel-control-prev:hover {
+  background-color: transparent;
+}
+
+.card-img-d {
+  height: 300px; /* Fixed height for the image container */
+  width: 100%; /* Full width of the parent container */
+  overflow: hidden; /* Hide overflow if any */
+}
+
+.card-img-d .img-d {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card {
+  width: 300px;
 }
