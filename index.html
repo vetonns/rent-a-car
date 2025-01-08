@@ -1,76 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rent a Car</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Rent a Car</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet" />
-  <script src="assets/js/filter_cars.js"></script>
+    <!-- map -->
 
-  <!-- map -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+   
+  </head>
 
+  <body>
+    
+    <!-- End Property Search Section -->>
 
-</head>
+    <!-- ======= Header/Navbar ======= -->
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarDefault"
+          aria-controls="navbarDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="navbar-brand text-brand translate" href="index.html"
+          >rent a <span class="color-b translate">CAR</span></a
+        >
 
-<body>
+        <div
+          class="navbar-collapse collapse justify-content-center"
+          id="navbarDefault"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active translate" href="index.html"  data-lang-al="Krye Faqja" data-lang-en="Home"></a>
+            </li>
 
-  <!-- End Property Search Section -->>
+            <li class="nav-item">
+              <a class="nav-link  translate" href="veturat.html" data-lang-al="Veturat" data-lang-en="Cars"></a>
+            </li>
 
-  <!-- ======= Header/Navbar ======= -->
-  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
-    <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <a class="navbar-brand text-brand translate" href="index.html">rent a <span
-          class="color-b translate">CAR</span></a>
+            <li class="nav-item">
+              <a class="nav-link translate" href="ekipi.html" data-lang-al="Ekipi" data-lang-en="Team"></a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link translate  " href="kontakti.html" data-lang-al="Kontakti" data-lang-en="Contact"></a>
+            </li>
 
-      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active translate" href="index.html" data-lang-al="Krye Faqja" data-lang-en="Home"></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link  translate" href="veturat.html" data-lang-al="Veturat" data-lang-en="Cars"></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link translate" href="ekipi.html" data-lang-al="Ekipa" data-lang-en="Team"></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link translate  " href="kontakti.html" data-lang-al="Kontakti" data-lang-en="Contact"></a>
-          </li>
-
-          <!-- <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
             <div class="dropdown-menu">
               <a class="dropdown-item " href="property-single.html">Property Single</a>
@@ -80,14 +105,14 @@
             </div>
           </li> -->
 
+          
+            
+          </ul>
 
-
-        </ul>
-
-
-      </div>
-
-      <!-- <button
+          
+        </div>
+        
+        <!-- <button
           type="button"
           class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse"
           data-bs-toggle="collapse"
@@ -96,56 +121,61 @@
           <i class="bi bi-search"></i>
         </button> -->
 
-      <div class="dropdown">
-        <button class="btn btn dropdown-toggle translate" type="button" id="languageDropdown" data-bs-toggle="dropdown"
-          aria-expanded="false" data-lang-al="Zgjedh Gjuhen" data-lang-en="Select Language">
-
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-          <li>
-            <button class="dropdown-item language-menu" data-lang="al" onclick="changeLanguage('al')">
-              <img class="language-flag" src="assets/img/alb.jpg" alt="Albanian Flag" title="Albanian Flag">
-              Albanian
-            </button>
-          </li>
-          <li>
-            <button class="dropdown-item language-menu" data-lang="en" onclick="changeLanguage('en')">
-              <img class="language-flag" src="assets/img/am.png" alt="American Flag" title="American Flag">
-              English
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <style>
-        /* .dropdown{
+        <div class="dropdown">
+          <button
+            class="btn btn dropdown-toggle translate"
+            type="button"
+            id="languageDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-lang-al="Zgjedh Gjuhen" data-lang-en="Select Language"
+          >
+            
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li>
+              <button class="dropdown-item language-menu" data-lang="al" onclick="changeLanguage('al')">
+                <img class="language-flag" src="assets/img/alb.jpg" alt="Albanian Flag" title="Albanian Flag">
+                Albanian
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item language-menu" data-lang="en" onclick="changeLanguage('en')">
+                <img class="language-flag" src="assets/img/am.png" alt="American Flag" title="American Flag">
+                English
+              </button>
+            </li>
+          </ul>
+        </div>
+        
+        <style>
+          /* .dropdown{
             display: flex;
             justify-content: center;
             align-items: flex-start; */
-
-        .language-menu {
-          display: flex;
-          align-items: flex-start;
-          justify-content: c;
-          gap: 10px;
-          border: none;
-          background: none;
-
-          width: 100%;
-        }
-
-        .language-flag {
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-        }
-      </style>
-
-
+          
+          .language-menu {
+            display: flex;
+            align-items: flex-start;
+            justify-content: c;
+            gap: 10px;
+            border: none;
+            background: none;
+            
+            width: 100%;
+          }
+          .language-flag {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          }
+        </style>
+        
 
 
-      <!-- butoni i ndrrimit te gjuhes nav -->
-      <!-- <div class="lng-b">
+
+<!-- butoni i ndrrimit te gjuhes nav -->
+        <!-- <div class="lng-b">
           <button class="language-menu " data-lang="al" onclick="changeLanguage('al')">
               <img class="language-flag" src="assets/img/alb.jpg" alt="Albanian Flag" title="Albanian Flag">
               <span></span>
@@ -160,201 +190,222 @@
 
 
 
+      
+    </nav>
 
-  </nav>
-
-  <style>
-    .language-menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      cursor: pointer;
-      border: none;
-      background-color: none;
-    }
-
-    .language-flag {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: none
-    }
-
-    .active {
-      font-weight: bold;
-    }
+    <style>
+      .language-menu { display: flex; flex-direction: column; align-items: center; cursor: pointer; border: none; background-color:none ; }
+      .language-flag { width: 40px; height: 40px; border-radius: 50%; background-color:none }
+      .active { font-weight: bold; }
   </style>
 
-  <script src="assets/js/language.js"></script>
-  <!-- End Header/Navbar -->
+    <script src="assets/js/language.js"></script>
+    <!-- End Header/Navbar -->
 
+    
+  <!-- </div>End Intro Section --> 
 
-  <!-- </div>End Intro Section -->
-
-  <div id="map">
-    <script src="assets/js/map.js"></script>
-  </div>
-  <div class="overlay-content">
-    <!-- <h6 class="text-uppercase mb-3">Luxury Living</h6>
+    <div id="map">
+      <script src="assets/js/map.js"></script>
+    </div>
+    <div class="overlay-content">
+      <!-- <h6 class="text-uppercase mb-3">Luxury Living</h6>
             <h1 class="mb-4">Merr Vetura me Qera Tani</h1>
             <a href="#" class="btn btn-primary py-2 px-4">Makinat Tona</a>
             <a href="#" class="btn btn-light py-2 px-4">Rezervo Tani</a> -->
-  </div>
-  <div class="container-fluid booking pb-5 map-filter filtrimi wow fadeIn" data-wow-delay="0.1s">
-    <div class="container lart">
-      <div class="bg-white shadow" style="padding: 35px">
-        <div class="row g-2">
-          <div class="col-md-10">
-            <div class="row g-2">
-              <div class="col-md-3">
-                <div class="model">
-                  <input type="text" class="form-control" placeholder="Model" id="model" required />
+    </div>
+    <div
+      class="container-fluid booking pb-5 map-filter filtrimi wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container lart">
+        <div class="bg-white shadow" style="padding: 35px">
+          <div class="row g-2">
+            <div class="col-md-10">
+              <div class="row g-2">
+                <div class="col-md-3">
+                  <div class="date" id="date1" data-target-input="nearest">
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      placeholder="Data e marrjes"
+                      type="date" id="dates" name="dates" required
+                      
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-3">
-                <div class="price">
-                  <input type="text" class="form-control" placeholder="Price" id="price" name="dates" required />
+                <div class="col-md-3">
+                  <div class="date" id="date2" data-target-input="nearest">
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input translate"
+                      placeholder="Data e kthimit"
+                      data-target="#date2" 
+                      data-lang-en="City"
+
+                      data-toggle="datetimepicker"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-3">
-                <div class="details">
-                  <select class="form-select translate" id="details">
-                    <option selected class="translate" data-lang-al="Detajet" data-lang-en="Details"></option>
-                    <option value="Bluetooth, AC">Bluetooth, AC</option>
-                    <option value="GPS, Sunroof">GPS, Sunroof</option>
-                    <option value="Heated Seats, Cruise Control">Heated Seats, Cruise Control</option>
-                    <option value="Rear Camera, Bluetooth">Rear Camera, Bluetooth</option>
-                    <option value="Android Auto, AC">Android Auto, AC</option>
-                    <option value="Convertible, Premium Audio">Convertible, Premium Audio</option>
-                    <option value="Sports Package, Bluetooth">Sports Package, Bluetooth</option>
-                    <option value="Rear Sensors, AC">Rear Sensors, AC</option>
-                    <option value="Autopilot, Touchscreen">Autopilot, Touchscreen</option>
+                <div class="col-md-3">
+                  <select class="form-select translate">
+                    <option selected class="translate" data-lang-al="Qyteti" data-lang-en="City"></option>
+                    <option value="1">Prishtin</option>
+                    <option value="2">Ferizaj</option>
+                    <option value="3">Gjilan</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <select class="form-select">
+                      <option selected class="translate" data-lang-al="Modeli"  data-lang-en="Model" ></option>
+                    <option value="1">Bmw</option>
+                    <option value="2">Mercedes</option>
+                    <option value="3">Audi</option>
                   </select>
                 </div>
               </div>
-              <div class="col-md-3">
-                <select class="form-select translate">
-                  <option selected class="translate" data-lang-al="Qyteti" data-lang-en="City"></option>
-                  <option value="Prishtinë">Prishtinë</option>
-                  <option value="Ferizaj">Ferizaj</option>
-                  <option value="Gjilan">Gjilan</option>
-                  <option value="Airport">Airport</option>
-                </select>
-              </div>
             </div>
-          </div>
-          <div class="col-md-2">
-            <button class="btn btn-primary smb w-100">Search</button>
+            <div class="col-md-2">
+              <button class="btn  smb w-100">Submit</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
-
-  
-  <main id="main">
+    <main id="main">
 
 
 
-    <!-- Booking Start -->
-    <section class="swipe-car">
-      <div class="container mb-5">
-        <h2 class="color-a mb-4 text-uppercase d-flex justify-content-center gap-3 translate"
-          data-lang-al="Veturat më të kerkuara" data-lang-en="Most wanted cars">
-          <strong class="color-b  text-center "> </strong>
-        </h2>
-        <div id="carCarousel" class="carousel slide" data-bs-ride="carousel">
-          <!-- Indicators -->
-          <div class="carousel-indicators color-b mt-5">
-            <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="0" class="active"
-              aria-current="true"></button>
-            <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="2"></button>
-          </div>
-
-          <!-- Carousel Items -->
-          <div class="carousel-inner mt-5">
-            <div class="carousel-item active">
-              <img src="assets/img/pngwing.com.png" class="d-block w-50 mx-auto" alt="Car 1" />
-              <div class="carousel-caption">
-                <!-- <h5>2016 BMW 2 Series 228i</h5> -->
-                <!-- <p>$39/Day</p> -->
-              </div>
+       <!-- Booking Start -->
+       <section class="swipe-car">
+        <div class="container mb-5">
+          <h2 class="color-a mb-4 text-uppercase d-flex justify-content-center gap-3 translate" data-lang-al="Veturat më të kerkuara" data-lang-en="Most wanted cars">
+             <strong class="color-b  text-center "> </strong>
+          </h2>
+          <div id="carCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators color-b mt-5">
+              <button
+                type="button"
+                data-bs-target="#carCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carCarousel"
+                data-bs-slide-to="2"
+              ></button>
             </div>
-            <div class="carousel-item">
-              <img src="assets/img/44.png" class="d-block w-50 mx-auto" alt="Car 2" />
-              <div class="carousel-caption">
-                <!-- <h5>Audi Sport Red 1989</h5> -->
-                <!-- <p>$29/Day</p> -->
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/img/purepng.com-silver-land-rover-discovery-car-sidecarvehicletransportland-rover-961524658534ntle2.png"
-                class="d-block w-50 mx-auto" alt="Car 3" />
-              <div class="carousel-caption">
-                <!-- <h5>2020 Mercedes C300</h5> -->
-                <!-- <p>$49/Day</p> -->
-              </div>
-            </div>
-          </div>
 
-          <!-- Controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel" data-bs-slide="prev">
-            <span class="custom-arrow " aria-hidden="true">&lsaquo;</span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next " type="button" data-bs-target="#carCarousel" data-bs-slide="next">
-            <span class="custom-arrow  " aria-hidden="true">&rsaquo;</span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <div class="text-center mt-3">
-          <a href="veturat.html" class="btn-veturat translate" data-lang-al="Shiko më shumë"
-            data-lang-en="Explore more"></a>
-        </div>
-      </div>
-
-      <!-- Bootstrap 5 JS -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </section>
-
-
-
-
-
-    <!-- ======= Services Section ======= -->
-    <section class="section-services section-t8">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a translate" data-lang-al="Shërbiet tona" data-lang-en="Our Series"></h2>
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                  <span class="bi bi-car-front-fill "></span>
-                </div>
-                <div class="card-title-c align-self-center p-2">
-                  <h2 class="title-c color-b text-center translate" data-lang-al="Vetura me Qira"
-                    data-lang-en="Rent a Car"></h2>
+            <!-- Carousel Items -->
+            <div class="carousel-inner mt-5">
+              <div class="carousel-item active">
+                <img
+                  src="assets/img/pngwing.com.png"
+                  class="d-block w-50 mx-auto"
+                  alt="Car 1"
+                />
+                <div class="carousel-caption">
+                  <!-- <h5>2016 BMW 2 Series 228i</h5> -->
+                  <!-- <p>$39/Day</p> -->
                 </div>
               </div>
-              <div class="card-body-c">
-                <p class="content-c translate" data-lang-al="Ofrojmë një gamë të gjerë makinash për çdo nevojë dhe
+              <div class="carousel-item">
+                <img
+                  src="assets/img/44.png"
+                  class="d-block w-50 mx-auto"
+                  alt="Car 2"
+                  
+                />
+                <div class="carousel-caption">
+                  <!-- <h5>Audi Sport Red 1989</h5> -->
+                  <!-- <p>$29/Day</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/purepng.com-silver-land-rover-discovery-car-sidecarvehicletransportland-rover-961524658534ntle2.png"
+                  class="d-block w-50 mx-auto"
+                  alt="Car 3"
+                />
+                <div class="carousel-caption">
+                  <!-- <h5>2020 Mercedes C300</h5> -->
+                  <!-- <p>$49/Day</p> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="custom-arrow spwipe-c " aria-hidden="true">&lsaquo;</span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next "
+              type="button"
+              data-bs-target="#carCarousel"
+              data-bs-slide="next"
+            >
+              <span class="custom-arrow  "  aria-hidden="true">&rsaquo;</span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="text-center mt-3">
+            <a href="about.html" class="btn-veturat translate" data-lang-al="Shiko më shumë" data-lang-en="Explore more"></a>
+          </div>
+        </div>
+
+        <!-- Bootstrap 5 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      </section>
+
+
+
+
+
+      <!-- ======= Services Section ======= -->
+      <section class="section-services section-t8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-wrap d-flex justify-content-between">
+                <div class="title-box">
+                  <h2 class="title-a translate" data-lang-al="Shërbiet tona" data-lang-en="Our Series"></h2></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card-box-c foo">
+                <div class="card-header-c d-flex">
+                  <div class="card-box-ico">
+                    <span class="bi bi-car-front-fill "></span>
+                  </div>
+                  <div class="card-title-c align-self-center p-2">
+                    <h2 class="title-c color-b text-center translate" data-lang-al="Vetura me Qira" data-lang-en="Rent a Car"></h2>
+                  </div>
+                </div>
+                <div class="card-body-c">
+                  <p class="content-c translate" data-lang-al="Ofrojmë një gamë të gjerë makinash për çdo nevojë dhe
                   mundësi. Shërbim i shpejtë, i sigurt dhe i përshtatshëm për
                   udhëtime afatshkurtra ose afatgjata. Kemi makina për çdo
                   preferencë: nga ekonomike deri tek luks, gjithmonë të
-                  mirëmbajtura dhe të gatshme për udhëtim." data-lang-en="We offer a wide range of cars for every need and
+                  mirëmbajtura dhe të gatshme për udhëtim." 
+                  
+                  data-lang-en="We offer a wide range of cars for every need and
                   opportunity. Fast, safe and convenient service for
                   short or long-term trips. We have cars for every
                   preference: from economical to luxury, always
@@ -362,355 +413,374 @@
                     
                   </p>
                 </div>
-                <div class=" card-footer-c translate">
-                  <a href="#" class="link-c link-icon translate" data-lang-al="Lexo më shumë"
-                    data-lang-en="Read more"></a>
-                  <span class="bi bi-chevron-right "></span>
+                <div class="card-footer-c translate">
+                  <a href="#" class="link-c link-icon translate" data-lang-al="Lexo më shumë" data-lang-en="Read more"></a>
+                    <span class="bi bi-chevron-right "></span>
                   </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                  <span class="bi bi-calendar4-week"></span>
+            <div class="col-md-4">
+              <div class="card-box-c foo">
+                <div class="card-header-c d-flex">
+                  <div class="card-box-ico">
+                    <span class="bi bi-calendar4-week"></span>
+                  </div>
+                  <div class="card-title-c align-self-center">
+                    <h2 class="title-c color-b text-center translate" data-lang-al="Qira afatgjate" data-lang-en="Long-term rental" ></h2>
+                  </div>
                 </div>
-                <div class="card-title-c align-self-center">
-                  <h2 class="title-c color-b text-center translate" data-lang-al="Qira afatgjate"
-                    data-lang-en="Long-term rental"></h2>
-                </div>
-              </div>
-              <div class="card-body-c">
-                <p class="content-c translate" data-lang-al="Ofrojmë vetura me qira sipas nevojës suaj – ditore, javore,
+                <div class="card-body-c">
+                  <p class="content-c translate" 
+                  data-lang-al="Ofrojmë vetura me qira sipas nevojës suaj – ditore, javore,
                   mujore apo për periudha afatgjata. Zgjidhni paketën që ju
                   përshtatet më mirë dhe përfitoni nga komoditeti, çmimet e
-                  arsyeshme dhe fleksibiliteti ynë!"
+                  arsyeshme dhe fleksibiliteti ynë!" 
+                  
                   data-lang-en="We offer car rentals according to your needs – daily, weekly, monthly or long-term. Choose the package that suits you best and benefit from our convenience, reasonable prices and flexibility!">
-
-                </p>
-              </div>
-              <div class="card-footer-c">
-                <a href="#" class="link-c link-icon translate" data-lang-al="Lexo më shumë" data-lang-en="Read more">
-                </a>
-                <span class="bi bi-chevron-right "></span>
-                </a>
+                    
+                  </p>
+                </div>
+                <div class="card-footer-c">
+                  <a href="#" class="link-c link-icon translate" data-lang-al="Lexo më shumë" data-lang-en="Read more"
+                    > </a>
+                    <span class="bi bi-chevron-right "></span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                  <span class="bi bi-card-checklist"></span>
+            <div class="col-md-4">
+              <div class="card-box-c foo">
+                <div class="card-header-c d-flex">
+                  <div class="card-box-ico">
+                    <span class="bi bi-card-checklist"></span>
+                  </div>
+                  <div class="card-title-c align-self-center ">
+                    <h2 class="title-c color-b text-center pl-4 translate" data-lang-al="Sherbim i veqant" data-lang-en="Special service"></h2>
+                  </div>
                 </div>
-                <div class="card-title-c align-self-center ">
-                  <h2 class="title-c color-b text-center pl-4 translate" data-lang-al="Sherbim i veqant"
-                    data-lang-en="Special service"></h2>
-                </div>
-              </div>
-              <div class="card-body-c">
-                <p class="content-c translate" data-lang-al="Ne kujdesemi për gjithçka! E dorëzojmë veturën aty ku ju
+                <div class="card-body-c">
+                  <p class="content-c translate" 
+                  data-lang-al="Ne kujdesemi për gjithçka! E dorëzojmë veturën aty ku ju
                   ndodheni dhe e marrim përsëri pas përfundimit të qirasë.
                   Shërbim i shpejtë, i përshtatshëm dhe pa stres – gjithmonë
-                  në kohë për ju!" data-lang-en="We take care of everything! We deliver the car to your location and pick it up again at the end of the rental.
+                  në kohë për ju!"
+                   
+                  data-lang-en="We take care of everything! We deliver the car to your location and pick it up again at the end of the rental.
                   Fast, convenient and stress-free service – always
                   on time for you!">
-
-                </p>
-              </div>
-              <div class="card-footer-c">
-                <a href="#" class="link-c link-icon translate" data-lang-al="Lexo më shumë" data-lang-en="Read more">
-                </a>
-                <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Services Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section class="section-testimonials section-t8 nav-arrow-a">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a translate" data-lang-al="Disa pershkrime nga klientet"
-                  data-lang-en="Some descriptions from customers"></h2>
+                   
+                  </p>
+                </div>
+                <div class="card-footer-c">
+                  <a href="#" class="link-c link-icon translate" data-lang-al="Lexo më shumë" data-lang-en="Read more" > </a>
+                    <span class="bi bi-chevron-right"></span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- End Services Section -->
 
-        <div id="testimonial-carousel" class="swiper">
-          <div class="swiper-wrapper">
-            <div class="carousel-item-a swiper-slide">
-              <div class="testimonials-box">
-                <div class="row">
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-img">
-                      <img src="assets/img/cardeal-1.jpg" alt="" class="img-fluid" />
+      <!-- ======= Testimonials Section ======= -->
+      <section class="section-testimonials section-t8 nav-arrow-a">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-wrap d-flex justify-content-between">
+                <div class="title-box">
+                  <h2 class="title-a translate" data-lang-al="Disa pershkrime nga klientet" data-lang-en="Some descriptions from customers"></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="testimonial-carousel" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="carousel-item-a swiper-slide">
+                <div class="testimonials-box">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="testimonial-img">
+                        <img
+                          src="assets/img/cardeal-1.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-ico">
-                      <i class="bi bi-chat-quote-fill"></i>
-                    </div>
-                    <div class="testimonials-content">
-                      <p class="testimonial-text translate"
+                    <div class="col-sm-12 col-md-6">
+                      <div class="testimonial-ico">
+                        <i class="bi bi-chat-quote-fill"></i>
+                      </div>
+                      <div class="testimonials-content">
+                        <p class="testimonial-text translate"
                         data-lang-al="Jam shumë i kënaqur me shërbimin nga Rent a Car Komanin. Procesi i rezervimit ishte i shpejtë dhe i lehtë,
-                        dhe makina ishte pikërisht ajo që kisha kërkuar. Çmimet janë shumë të arsyeshme dhe shërbimi i klientit ishte përtej pritshmërive!"
+                        dhe makina ishte pikërisht ajo që kisha kërkuar. Çmimet janë shumë të arsyeshme dhe shërbimi i klientit ishte përtej pritshmërive!" 
+                        
                         data-lang-en="I am very pleased with the service from Rent a Car Komanin. The booking process was quick and easy,
                         and the car was exactly what I had requested. The prices are very reasonable and the customer service was beyond expectations!">
-
-                      </p>
-                    </div>
-                    <div class="testimonial-author-box">
-                      <img src="assets/img/cardeal-2.jpg" alt="" class="testimonial-avatar" />
-                      <h5 class="testimonial-author">Albert & Erika</h5>
+                          
+                        </p>
+                      </div>
+                      <div class="testimonial-author-box">
+                        <img
+                          src="assets/img/cardeal-2.jpg"
+                          alt=""
+                          class="testimonial-avatar"
+                        />
+                        <h5 class="testimonial-author">Albert & Erika</h5>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- End carousel item -->
+              <!-- End carousel item -->
 
-            <div class="carousel-item-a swiper-slide">
-              <div class="testimonials-box">
-                <div class="row">
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-img">
-                      <img src="assets/img/cardeal-3.webp" alt="" class="img-fluid" />
+              <div class="carousel-item-a swiper-slide">
+                <div class="testimonials-box">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="testimonial-img">
+                        <img
+                          src="assets/img/cardeal-3.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-ico">
-                      <i class="bi bi-chat-quote-fill"></i>
-                    </div>
-                    <div class="testimonials-content">
-                      <p class="testimonial-text translate"
+                    <div class="col-sm-12 col-md-6">
+                      <div class="testimonial-ico">
+                        <i class="bi bi-chat-quote-fill"></i>
+                      </div>
+                      <div class="testimonials-content">
+                        <p class="testimonial-text translate" 
                         data-lang-al=" Përvoja ime me Rent a Car Komanin ishte e shkëlqyer! Automjeti ishte i pastër, i rehatshëm dhe në gjendje perfekte.
-                        Stafi ishte shumë miqësor dhe i gatshëm për të ndihmuar me çdo pyetje. Me siguri do të zgjedh këtë kompani për udhëtimet e mia të ardhshme!"
+                        Stafi ishte shumë miqësor dhe i gatshëm për të ndihmuar me çdo pyetje. Me siguri do të zgjedh këtë kompani për udhëtimet e mia të ardhshme!" 
+                        
                         data-lang-en="My experience with Rent a Car Komanin was excellent! The vehicle was clean, comfortable and in perfect condition.
                         The staff was very friendly and willing to help with any questions. I will definitely choose this company for my future trips!">
-
-                      </p>
-                    </div>
-                    <div class="testimonial-author-box">
-                      <img src="assets/img/mini-testimonial-2.jpg" alt="" class="testimonial-avatar" />
-                      <h5 class="testimonial-author">Erdit & Emma</h5>
+                         
+                        </p>
+                      </div>
+                      <div class="testimonial-author-box">
+                        <img
+                          src="assets/img/mini-testimonial-2.jpg"
+                          alt=""
+                          class="testimonial-avatar"
+                        />
+                        <h5 class="testimonial-author">Erdit & Emma</h5>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- End carousel item -->
             </div>
-            <!-- End carousel item -->
           </div>
+          <div
+            class="testimonial-carousel-pagination carousel-pagination"
+          ></div>
         </div>
-        <div class="testimonial-carousel-pagination carousel-pagination"></div>
-      </div>
-    </section>
-    <!-- End Testimonials Section -->
-  </main>
-  <!-- End #main -->
+      </section>
+      <!-- End Testimonials Section -->
+    </main>
+    <!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <section class="section-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand">rent a <strong class="color-b">CAR</strong> </h3>
-            </div>
-            <div class="w-body-a">
-              <p class="w-text-a color-text-a translate" data-lang-al="Mirë se vini në Rent a Car Komanin! Ne ofrojmë automjete moderne, të sigurta dhe të përshtatshme 
-                për çdo nevojë tuajën, duke garantuar udhëtime të rehatshme dhe pa shqetësime në çdo destinacion."
+    <!-- ======= Footer ======= -->
+    <section class="section-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="widget-a">
+              <div class="w-header-a">
+                <h3 class="w-title-a text-brand">rent a <strong class="color-b">CAR</strong> </h3>
+              </div>
+              <div class="w-body-a">
+                <p class="w-text-a color-text-a translate"
+                data-lang-al="Mirë se vini në Rent a Car Komanin! Ne ofrojmë automjete moderne, të sigurta dhe të përshtatshme 
+                për çdo nevojë tuajën, duke garantuar udhëtime të rehatshme dhe pa shqetësime në çdo destinacion." 
+                
                 data-lang-en="Welcome to Rent a Car Komanin! We offer modern, safe and convenient vehicles
-                for your every need, guaranteeing comfortable and worry-free trips to any destination.">
-
-              </p>
-            </div>
-            <div class="w-footer-a">
-              <ul class="list-unstyled">
-                <li class="color-a">
-                  <span class="color-text-a">Email .</span>
-                  rentacar@gmail.com
-                </li>
-                <li class="color-a">
-                  <span class="color-text-a translate" data-lang-al="Numri Kontaktues ."
-                    data-lang-en="Contact Number ."></span> +383 45 945 234
-                </li>
-              </ul>
+                for your every need, guaranteeing comfortable and worry-free trips to any destination." >
+                  
+                </p>
+              </div>
+              <div class="w-footer-a">
+                <ul class="list-unstyled">
+                  <li class="color-a">
+                    <span class="color-text-a">Email .</span>
+                    rentacar@gmail.com
+                  </li>
+                  <li class="color-a">
+                    <span class="color-text-a translate" data-lang-al="Numri Kontaktues ." data-lang-en="Contact Number ."></span> +383 45 945 234
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-4 section-md-t3">
-          <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand translate" data-lang-al="Kompania Jonë" data-lang-en="Our Company"></h3>
+          <div class="col-sm-12 col-md-4 section-md-t3">
+            <div class="widget-a">
+              <div class="w-header-a">
+                <h3 class="w-title-a text-brand translate" data-lang-al="Kompania Jonë" data-lang-en="Our Company"></h3>
+              </div>
+              <div class="w-body-a">
+                <div class="w-body-a">
+                  <ul class="list-unstyled">
+                    <li class="item-list-a">
+                      <i class="bi bi-chevron-right"></i>
+                      <a href="#" class="translate" data-lang-al="Harta për Navigim" data-lang-en="Navigation Map"></a>
+                    </li>
+                    <!-- <li class="item-list-a">
+                      <i class="bi bi-chevron-right" class="translate" data-lang-al="Kontakti" data-lang-en="Contact"></i> <a href="#">Legal</a>
+                    </li> -->
+                    <li class="item-list-a">
+                      <i class="bi bi-chevron-right"></i>
+                      <a href="#" class="translate" data-lang-al="Krye Faqja" data-lang-en="Home"></a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="bi bi-chevron-right"></i>
+                      <a href="#" class="translate" data-lang-al="Veturat" data-lang-en="Cars"></a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="bi bi-chevron-right"></i>
+                      <a href="#" class="translate" data-lang-al="Rreth Nesh" data-lang-en="About Us"></a>
+                    </li>
+                    
+                    <li class="item-list-a">
+                      <i class="bi bi-chevron-right"></i>
+                      <a href="#" class="translate" data-lang-al="Politika e privatësisë" data-lang-en="Policy Privacy"></a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="bi bi-chevron-right"></i>
+                      <a href="#" class="translate" data-lang-al="Kontakti" data-lang-en="Contact"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="w-body-a">
+          </div>
+          <div class="col-sm-12 col-md-4 section-md-t3">
+            <div class="widget-a">
+              <div class="w-header-a">
+                <h3 class="w-title-a text-brand translate" data-lang-al="Lokacionet tona" data-lang-en="Our Locations"></h3>
+              </div>
               <div class="w-body-a">
                 <ul class="list-unstyled">
                   <li class="item-list-a">
                     <i class="bi bi-chevron-right"></i>
-                    <a href="#" class="translate" data-lang-al="Harta për Navigim" data-lang-en="Navigation Map"></a>
+                    <a href="#">Prishtin</a>
                   </li>
-                  <!-- <li class="item-list-a">
-                      <i class="bi bi-chevron-right" class="translate" data-lang-al="Kontakti" data-lang-en="Contact"></i> <a href="#">Legal</a>
-                    </li> -->
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i>
-                    <a href="#" class="translate" data-lang-al="Krye Faqja" data-lang-en="Home"></a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Ferizaj</a>
                   </li>
                   <li class="item-list-a">
                     <i class="bi bi-chevron-right"></i>
-                    <a href="#" class="translate" data-lang-al="Veturat" data-lang-en="Cars"></a>
+                    <a href="#">Gjilan</a>
                   </li>
                   <li class="item-list-a">
                     <i class="bi bi-chevron-right"></i>
-                    <a href="#" class="translate" data-lang-al="Rreth Nesh" data-lang-en="About Us"></a>
-                  </li>
-
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i>
-                    <a href="#" class="translate" data-lang-al="Politika e privatësisë"
-                      data-lang-en="Policy Privacy"></a>
+                    <a href="#">Pej</a>
                   </li>
                   <li class="item-list-a">
                     <i class="bi bi-chevron-right"></i>
-                    <a href="#" class="translate" data-lang-al="Kontakti" data-lang-en="Contact"></a>
+                    <a href="#">Prizeren</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#">AirPort</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 section-md-t3">
-          <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand translate" data-lang-al="Lokacionet tona" data-lang-en="Our Locations">
-              </h3>
-            </div>
-            <div class="w-body-a">
-              <ul class="list-unstyled">
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#">Prishtin</a>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="nav-footer">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#"class="translate" data-lang-al="Krye Faqja" data-lang-en="Home"></a>
                 </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Ferizaj</a>
+                <li class="list-inline-item">
+                  <a href="#" class="translate" data-lang-al="Veturat" data-lang-en="Cars"></a>
                 </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#">Gjilan</a>
+                <li class="list-inline-item">
+                  <a href="#" class="translate" data-lang-al="Rreth Nesh" data-lang-en="About Us"></a>
                 </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#">Pej</a>
+                <li class="list-inline-item">
+                  <a href="#" class="translate" data-lang-al="Ekipi" data-lang-en="Team"></a>
                 </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#">Prizeren</a>
+                <li class="list-inline-item">
+                  <a href="#" class="translate" data-lang-al="Kontakti" data-lang-en="Contact"></a>
                 </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#">AirPort</a>
+              </ul>
+            </nav>
+            <div class="socials-a">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                  </a>
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <nav class="nav-footer">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#" class="translate" data-lang-al="Krye Faqja" data-lang-en="Home"></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="translate" data-lang-al="Veturat" data-lang-en="Cars"></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="translate" data-lang-al="Rreth Nesh" data-lang-en="About Us"></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="translate" data-lang-al="Ekipa" data-lang-en="Team"></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="translate" data-lang-al="Kontakti" data-lang-en="Contact"></a>
-              </li>
-            </ul>
-          </nav>
-          <div class="socials-a">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="bi bi-facebook" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="bi bi-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="bi bi-instagram" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="bi bi-linkedin" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="copyright-footer">
-            <p class="copyright color-text-a" class="translate" data-lang-al="&copy; Copyright " data-lang-en="Contact">
-              &copy; Copyright
-              <span class="color-a">RentaCar</span> <span class="translate"
-                data-lang-al="Të gjitha të drejtat e rezervuara. " data-lang-en="All rights reserved.">span>
-            </p>
-          </div>
-          <div class="credits">
-            <!--
+            <div class="copyright-footer">
+              <p class="copyright color-text-a" class="translate" data-lang-al="&copy; Copyright " data-lang-en="Contact">
+                &copy; Copyright
+                <span class="color-a">RentaCar</span> <span class="translate" data-lang-al="Të gjitha të drejtat e rezervuara. " data-lang-en="All rights reserved." >span> 
+              </p>
+            </div>
+            <div class="credits">
+              <!--
             All the links in the footer should remain intact.
             You can delete the links only if you purchased the pro version.
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
           -->
-            <span class="translate" data-lang-al="Dizajnuar nga" data-lang-en="Designed by"> </span><a
-              href="https://bootstrapmade.com/">
-              <span class="translate" data-lang-al="Grupi Rent a Car" data-lang-en="Ren a Car Group"> </span> </a>
+              <span class="translate" data-lang-al="Dizajnuar nga" data-lang-en="Designed by">  </span><a href="https://bootstrapmade.com/"> 
+                <span class="translate" data-lang-al="Grupi Rent a Car" data-lang-en="Ren a Car Group">  </span> </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- End  Footer -->
+    </footer>
+    <!-- End  Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

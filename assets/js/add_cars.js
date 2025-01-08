@@ -92,10 +92,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <li><strong>Features:</strong> ${car.details.features}</li>
                 </ul>
                 <div class="city"><strong>City:</strong> ${car.city}</div>
-                <button class="btn btn-primary btn-book mt-3 reserve-btn" data-car='${JSON.stringify(
+                
+            </div>
+            <button class="btn btn-primary btn-book mt-3 res-b reserve-btn" data-car='${JSON.stringify(
                   car
                 )}' onclick="openModal(event)">Rezervo</button>
-            </div>
         </div>
     </div>
 </div>

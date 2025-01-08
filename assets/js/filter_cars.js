@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   document
-    .querySelector(".btn-primary.smb")
+    .querySelector(".btn-p.smb")
     .addEventListener("click", function (event) {
       event.preventDefault();
 

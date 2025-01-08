@@ -566,13 +566,14 @@ a:hover {
 
 .btn.btn-a {
   text-decoration: none;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #2eca6a;
+  color: #000000;
+  border-radius: 5px;
 }
 
 .btn.btn-a:hover {
-  background-color: #2eca6a;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .btn.btn-b {
@@ -2242,7 +2243,12 @@ footer .credits {
 
 .smb {
   background-color: #18d26e;
+  color: white;
 }
+.smb :hover{
+  background-color: #000000;
+}
+
 #map {
   height: 600px;
 }
@@ -2302,6 +2308,11 @@ footer .credits {
 
 .custom-arrow {
   color: #2eca6a;
+
+
+}
+.custom-arrow :hover{
+  background-color: none;
 }
 
 /* kartat e kerrev */
@@ -2414,6 +2425,7 @@ footer .credits {
   padding: 10px;
   border: none;
   cursor: pointer;
+  
 }
 
 .reserve-btn:hover {
@@ -2532,4 +2544,28 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+.res-b{
+  border-radius: 5px;
+  
+}
+.im-1 img{
+  width: 400%;
+  
+}
+.spwipe-c {
+  background-color: none ;
+  padding: 0%
+}
+.spwipe-c :hover{
+  background-color: none;
+  padding: 0%;
+}
+
+.smb {
+  background-color: #18d26e;
+  color: white;
+}
+.smb :hover{
+  background-color: #000000;
 }
