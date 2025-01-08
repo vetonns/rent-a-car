@@ -295,51 +295,52 @@
 
 </section>
 
-<!-- Modal for reservation -->
+<!-- The reservation modal -->
 <div class="modal" id="reservationModal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h2>Rezervo Veturen tende</h2>
-        <form id="reservationForm">
-            <label for="name">Emri dhe Mbiemri:</label>
-            <input type="text" id="name" name="name" required>
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Rezervo Veturen tende</h2>
+      <form id="reservationForm">
+          <label for="name">Emri dhe Mbiemri:</label>
+          <input type="text" id="name" name="name" required>
 
-            
+          <label for="dates">Data e Rezervimit:</label>
+          <input type="date" id="reservationDate" name="reservationDate" required>
 
-            <label for="dates">Data e Rezervimit:</label>
-            <input type="date" id="dates" name="dates" required>
+          <label for="returnDate">Data e kthimit:</label>
+          <input type="date" id="returnDate" name="returnDate" required>
 
-            <label for="dates">Data e kthimit:</label>
-            <input type="date" id="dates" name="dates" required>
+          <label for="extraNotes">Kerkesa shtes:</label>
+          <input type="text" id="extraNotes" name="extraNotes">
 
-            <label class="" for="dates">Kerkesa shtes</label>
-            <input type="extraNotes" id="dates" name="dates" required>
+          <label for="car">Car Model:</label>
+          <input type="text" id="car" name="car" value="" readonly>
 
-            <label for="car">Car Model:</label>
-            <input type="text" id="car" name="car" value="" readonly>
-
-            <button type="submit">Confirm Reservation</button>
-        </form>
-    </div>
+          <button type="submit">Confirm Reservation</button>
+      </form>
+  </div>
 </div>
 
 <!-- Custom Alert Modal -->
 <div id="customAlert" class="custom-alert">
-  <div class="custom-alert-content">
-    <span class="custom-alert-close" onclick="closeCustomAlert()">&times;</span>
-    <p id="alertMessage">Rezervimi u krye me sukese</p>
-    <button onclick="closeCustomAlert()">OK</button>
-  </div>
+<div class="custom-alert-content">
+  <span class="custom-alert-close" onclick="closeCustomAlert()">&times;</span>
+  <p id="alertMessage">Rezervimi u krye me sukese</p>
+  <button onclick="closeCustomAlert()">OK</button>
+</div>
 </div>
 
 <script>
 // JavaScript to open and close the modal
-function openModal(car) {
-    // Show the modal
-    document.getElementById('reservationModal').style.display = "block";
-
+function openModal(event) {
+    // Get the car object from the button's data attribute
+    const car = JSON.parse(event.target.getAttribute('data-car'));
+    
     // Set the car model title in the modal
     document.getElementById('car').value = car.title;
+
+    // Show the modal
+    document.getElementById('reservationModal').style.display = "block";
 }
 
 function closeModal() {
@@ -362,7 +363,7 @@ document.getElementById('reservationForm').addEventListener('submit', function(e
     const carModel = document.getElementById('car').value;
 
     // Show the custom alert with a custom message
-    showCustomAlert(`Rezervimi u i ${carModel} u krye me sukese`);
+    showCustomAlert(`Rezervimi i ${carModel} u krye me sukese`);
 
     // Optionally close the modal after the alert
     closeModal();
@@ -373,14 +374,15 @@ document.getElementById('reservationForm').addEventListener('submit', function(e
 
 // Function to show the custom alert
 function showCustomAlert(message) {
-  document.getElementById('alertMessage').textContent = message;
-  document.getElementById('customAlert').style.display = 'flex';
+    document.getElementById('alertMessage').textContent = message;
+    document.getElementById('customAlert').style.display = 'flex';
 }
 
 // Function to close the custom alert
 function closeCustomAlert() {
-  document.getElementById('customAlert').style.display = 'none';
+    document.getElementById('customAlert').style.display = 'none';
 }
+
 </script>
 
 

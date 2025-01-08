@@ -76,24 +76,29 @@ document.addEventListener("DOMContentLoaded", function () {
         carCard.className = "car-card";
         carCard.innerHTML = `
           <div class="car-card shadow-custom">
-            <div class="col align-items-center">
-              <div class="col">
-                <div class="car-card-img">
-                  <img src="assets/img/${car.image}" alt="${car.title}" class="img-fluid">
-                </div>
-              </div>
-              <div class="card-1">
-                <div class="car-card-body">
-                  <h5 class="car-title">${car.title}</h5>
-                  <div class="car-price">${car.price}</div>
-                  <ul class="car-details list-unstyled mt-3 mb-3">
-                    <li><strong>Features:</strong> ${car.details.features}</li>
-                  </ul>
-                  <div class="city"><strong>City:</strong> ${car.city}</div>
-                </div>
-              </div>
+    <div class="col align-items-center">
+        <div class="col">
+            <div class="car-card-img">
+                <img src="assets/img/${car.image}" alt="${
+          car.title
+        }" class="img-fluid">
             </div>
-          </div>
+        </div>
+        <div class="card-1">
+            <div class="car-card-body">
+                <h5 class="car-title">${car.title}</h5>
+                <div class="car-price">${car.price}</div>
+                <ul class="car-details list-unstyled mt-3 mb-3">
+                    <li><strong>Features:</strong> ${car.details.features}</li>
+                </ul>
+                <div class="city"><strong>City:</strong> ${car.city}</div>
+                <button class="btn btn-primary btn-book mt-3 reserve-btn" data-car='${JSON.stringify(
+                  car
+                )}' onclick="openModal(event)">Rezervo</button>
+            </div>
+        </div>
+    </div>
+</div>
         `;
         carContainer.appendChild(carCard);
       });
