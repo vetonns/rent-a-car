@@ -218,15 +218,15 @@ document
     event.preventDefault(); // Prevent default action (e.g., page reload)
 
     // Get the values of inputs and selects
-    const pickupDate = document.getElementById("pickup_date").value;
-    const returnDate = document.getElementById("return_date").value;
-    const city = document.querySelector(".form-select.translate").value;
-    const model = document.querySelectorAll(".form-select")[1].value;
+    const price = document.getElementById("price").value;
+    const details = document.getElementById("details").value;
+    const city = document.querySelectorAll(".form-select")[1].value;
+    const model = document.querySelectorAll(".form-select")[0].value;
 
     // Create an object with form data
     const formData = {
-      pickupDate,
-      returnDate,
+      price,
+      details,
       city,
       model,
     };
