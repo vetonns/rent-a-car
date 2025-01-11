@@ -51,6 +51,8 @@
   </head>
 
   <body>
+
+    <script src="/assets/js/filter_cars.js"></script>
     
     <!-- End Property Search Section -->>
 
@@ -214,59 +216,51 @@
             <a href="#" class="btn btn-primary py-2 px-4">Makinat Tona</a>
             <a href="#" class="btn btn-light py-2 px-4">Rezervo Tani</a> -->
     </div>
-    <div
-      class="container-fluid booking pb-5 map-filter filtrimi wow fadeIn"
-      data-wow-delay="0.1s"
-    >
+    <div class="container-fluid booking pb-5 map-filter filtrimi wow fadeIn" data-wow-delay="0.1s">
       <div class="container lart">
         <div class="bg-white shadow" style="padding: 35px">
           <div class="row g-2">
             <div class="col-md-10">
               <div class="row g-2">
                 <div class="col-md-3">
-                  <div class="date" id="date1" data-target-input="nearest">
-                    <input
-                      type="text"
-                      class="form-control datetimepicker-input"
-                      placeholder="Data e marrjes"
-                      type="date" id="dates" name="dates" required
-                      
-                    />
+                  <div class="model">
+                    <input type="text" class="form-control" placeholder="Model" id="model" required />
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="date" id="date2" data-target-input="nearest">
-                    <input
-                      type="text"
-                      class="form-control datetimepicker-input translate"
-                      placeholder="Data e kthimit"
-                      data-target="#date2" 
-                      data-lang-en="City"
-
-                      data-toggle="datetimepicker"
-                    />
+                  <div class="price">
+                    <input type="text" class="form-control" placeholder="Price" id="price" name="dates" required />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="details">
+                    <select class="form-select translate" id="details">
+                      <option selected class="translate" data-lang-al="Detajet" data-lang-en="Details"></option>
+                      <option value="Bluetooth, AC">Bluetooth, AC</option>
+                      <option value="GPS, Sunroof">GPS, Sunroof</option>
+                      <option value="Heated Seats, Cruise Control">Heated Seats, Cruise Control</option>
+                      <option value="Rear Camera, Bluetooth">Rear Camera, Bluetooth</option>
+                      <option value="Android Auto, AC">Android Auto, AC</option>
+                      <option value="Convertible, Premium Audio">Convertible, Premium Audio</option>
+                      <option value="Sports Package, Bluetooth">Sports Package, Bluetooth</option>
+                      <option value="Rear Sensors, AC">Rear Sensors, AC</option>
+                      <option value="Autopilot, Touchscreen">Autopilot, Touchscreen</option>
+                    </select>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <select class="form-select translate">
                     <option selected class="translate" data-lang-al="Qyteti" data-lang-en="City"></option>
-                    <option value="1">Prishtin</option>
-                    <option value="2">Ferizaj</option>
-                    <option value="3">Gjilan</option>
-                  </select>
-                </div>
-                <div class="col-md-3">
-                  <select class="form-select">
-                      <option selected class="translate" data-lang-al="Modeli"  data-lang-en="Model" ></option>
-                    <option value="1">Bmw</option>
-                    <option value="2">Mercedes</option>
-                    <option value="3">Audi</option>
+                    <option value="Prishtinë">Prishtinë</option>
+                    <option value="Ferizaj">Ferizaj</option>
+                    <option value="Gjilan">Gjilan</option>
+                    <option value="Airport">Airport</option>
                   </select>
                 </div>
               </div>
             </div>
             <div class="col-md-2">
-              <button class="btn  smb w-100">Search</button>
+              <button class="btn btn-p smb w-100">Search</button>
             </div>
           </div>
         </div>
